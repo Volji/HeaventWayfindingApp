@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="Clock" Description="Clock DA" Category="Time" Author="IntuiLab S.A" AuthorId="IntuiLab" Icon="Clock.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="6316">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space/Middle/Default template for Clock" CreateAsCollectionSibling="true">
+    <Collection Name="Default template for Clock" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:230]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:230]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:500]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:681]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:230]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Text for &lt;Date&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Clock/date]]></Property>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:32]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:17]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Text for &lt;Time&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Clock/time]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:22]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:32]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:213]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="HoursNeedle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[mashup://externals/Clock/hoursInAngle]]></Property>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/b456a42e-ff56-2456-be75-076f4feaf321]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Visual" Name="Effects">
+            <EffectsCollection />
+          </Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:114]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:92]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:14]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="MinutesNeedle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[mashup://externals/Clock/minutesInAngle]]></Property>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/b789a42e-ff56-2456-be75-07752feaf654]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Visual" Name="Effects">
+            <EffectsCollection />
+          </Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:114]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:92]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:14]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="SecondsNeedle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[mashup://externals/Clock/secondsInAngle]]></Property>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/b123a42e-ff56-2456-be75-07752feaf987]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Visual" Name="Effects">
+            <EffectsCollection />
+          </Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:114]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:92]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:14]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Group separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:34]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Group separator 1" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:196]]></Property>
+        </Properties>
+      </Asset>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Clock" DescriptorPath="player://data/InterfaceAssets/ClockJS/Clock.ifd" ExternalAssetName="Clock">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.ifd" Length="19550" LastModificationDate="2015-04-02T11:02:14Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/EventEmitter.js" Length="16040" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/moment-with-langs.js" Length="291412" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/moment-timezone-with-data.js" Length="187569" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.js" Length="7102" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/icon_clock_32.png" Length="569" LastModificationDate="2015-03-24T15:52:56Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.dax" Length="13536" LastModificationDate="2015-03-24T16:29:40Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.png" Length="2025" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/icon_time_32.png" Length="1387" LastModificationDate="2014-09-09T15:53:16.9068133Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2015-03-16T10:45:58Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/HoursNeedleW.png" Length="14728" LastModificationDate="2015-03-24T16:29:40Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/MinutesNeedleW.png" Length="15162" LastModificationDate="2015-03-24T16:29:40Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/SecondsNeedleW.png" Length="14704" LastModificationDate="2015-03-24T16:29:40Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="b456a42e-ff56-2456-be75-076f4feaf321" Type="uri" Length="14728" LastModificationDate="2015-03-24T16:29:40Z" DefaultValue="player://data/Images/HoursNeedleW.png">
+      <Alternate Value="player://data/Generated/31ce5d3b4bf5f09cf24fc19400af11d5.png" Width="92" Height="12" Length="284" LastModificationDate="2015-04-06T21:35:34.2893529Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b789a42e-ff56-2456-be75-07752feaf654" Type="uri" Length="15162" LastModificationDate="2015-03-24T16:29:40Z" DefaultValue="player://data/Images/MinutesNeedleW.png">
+      <Alternate Value="player://data/Generated/6b42ec398e1ef2460ecefd94184c0040.png" Width="92" Height="12" Length="287" LastModificationDate="2015-04-06T21:35:34.2903529Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b123a42e-ff56-2456-be75-07752feaf987" Type="uri" Length="14704" LastModificationDate="2015-03-24T16:29:40Z" DefaultValue="player://data/Images/SecondsNeedleW.png">
+      <Alternate Value="player://data/Generated/d580083bdf53badae79c606967e4ea82.png" Width="92" Height="12" Length="260" LastModificationDate="2015-04-06T21:35:34.2853526Z" />
+    </Resource>
+  </MashupResource>
+</Mashup>

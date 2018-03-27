@@ -1,0 +1,592 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1.1",
+  "id": "clockjs:v1",
+  "name": "ClockJS",
+  "version": "v1.6",
+  "title": "Clock",
+  "if.category": "Time",
+  "protocol": "js",
+  "basePath": "Clock",
+  "icons": {
+    "x32": "icon_clock_32.png"
+  },
+  "if.dependencies": [
+    "EventEmitter.js",
+    "moment-with-langs.js",
+    "moment-timezone-with-data.js",
+    "Clock.js"
+  ],
+  "schemas": {
+    "Clock": {
+      "id": "Clock",
+      "type": "object",
+      "description": "Clock",
+      "properties": {
+        "hours": {
+          "title": "Hours",
+          "type": "integer",
+          "description": "Current hour",
+          "readonly": true,
+          "default": "0"
+        },
+        "minutes": {
+          "title": "Minutes",
+          "type": "integer",
+          "description": "Current minute",
+          "readonly": true,
+          "default": "0"
+        },
+        "seconds": {
+          "title": "Seconds",
+          "type": "integer",
+          "description": "Current second",
+          "readonly": true,
+          "default": "0"
+        },
+        "am_pm": {
+          "title": "Use AM/PM for display",
+          "type": "boolean",
+          "description": "Use AM/PM for display",
+          "default": false
+        },
+        "secondsInAngle": {
+          "type": "integer",
+          "description": "Current second angle in degree",
+          "title": "Seconds in degrees",
+          "readonly": true,
+          "default": "0"
+        },
+        "minutesInAngle": {
+          "type": "integer",
+          "description": "Current minute angle in degree",
+          "title": "Minutes in degrees",
+          "readonly": true,
+          "default": "0"
+        },
+        "hoursInAngle": {
+          "type": "integer",
+          "description": "Current hour angle in degree",
+          "title": "Hours in degrees",
+          "readonly": true,
+          "default": "0"
+        },
+        "date": {
+          "title": "Long date",
+          "type": "string",
+          "description": "Current date of clock",
+          "readonly": true,
+          "default": "Monday 2014 March 11st"
+        },
+        "shortDate": {
+          "title": "Short date",
+          "type": "string",
+          "description": "Current date of clock",
+          "readonly": true,
+          "default": "11/03/2014"
+        },
+        "time": {
+          "title": "Long time",
+          "type": "string",
+          "description": "Current time of clock",
+          "readonly": true,
+          "default": "00:00:00"
+        },
+        "shortTime": {
+          "title": "Short time",
+          "type": "string",
+          "description": "Current time of clock",
+          "readonly": true,
+          "default": "00:00"
+        },
+        "dateTime": {
+          "title": "Complete date time",
+          "type": "string",
+          "description": "Current date and time of clock",
+          "readonly": true,
+          "default": "11/03/2014 00:00:00"
+        },
+        "dayString": {
+          "title": "Day as string",
+          "type": "string",
+          "description": "Current day as string",
+          "readonly": true,
+          "default": "Monday"
+        },
+        "monthString": {
+          "title": "Month as string",
+          "type": "string",
+          "description": "Current month as string",
+          "readonly": true,
+          "default": "January"
+        },
+        "year": {
+          "title": "Year",
+          "type": "integer",
+          "description": "Current year",
+          "readonly": true,
+          "default": 2014
+        },
+        "dayNum": {
+          "title": "Day as number",
+          "type": "integer",
+          "description": "Current day as number",
+          "readonly": true,
+          "default": 1
+        },
+        "monthNum": {
+          "title": "Month as number",
+          "type": "integer",
+          "description": "Current month as number",
+          "readonly": true,
+          "default": 1
+        },
+        "iso8601": {
+          "title": "ISO 8601 date",
+          "type": "string",
+          "description": "Current date with ISO 8601 format",
+          "readonly": true,
+          "default": ""
+        },
+        "timezone": {
+          "type": "string",
+          "description": "lorem ipsum",
+          "title": "Time Zone",
+          "enum": [
+            {
+              "name": "Local time",
+              "description": "",
+              "value": "local"
+            },
+            {
+              "name": "(GMT-12:00) International dateline, west",
+              "description": "",
+              "value": "Pacific/Wallis"
+            },
+            {
+              "name": "(GMT-11:00) Midway Islands, Samoan Islands",
+              "description": "",
+              "value": "Pacific/Midway"
+            },
+            {
+              "name": "(GMT-10:00) Hawaii",
+              "description": "",
+              "value": "Pacific/Honolulu"
+            },
+            {
+              "name": "(GMT-09:00) Alaska",
+              "description": "",
+              "value": "America/Anchorage"
+            },
+            {
+              "name": "(GMT-08:00) Pacific Time (USA - Canada); Tijuana",
+              "description": "",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "(GMT-07:00) Mountain Time (USA - Canada)",
+              "description": "",
+              "value": "America/Denver"
+            },
+            {
+              "name": "(GMT-06:00) Central time (USA - Canada)",
+              "description": "",
+              "value": "America/Chicago"
+            },
+            {
+              "name": "(GMT-05:00) Eastern time (USA - Canada)",
+              "description": "",
+              "value": "America/New_York"
+            },
+            {
+              "name": "(GMT-04:00) Atlantic Time (Canada)",
+              "description": "",
+              "value": "America/Goose_Bay"
+            },
+            {
+              "name": "(GMT-03:00) Brasilia, Buenos Aires, Montevideo",
+              "description": "",
+              "value": "America/Sao_Paulo"
+            },
+            {
+              "name": "(GMT-02:00) Mid-Atlantic, Cap Verde",
+              "description": "",
+              "value": "Atlantic/Cape_Verde"
+            },
+            {
+              "name": "(GMT-01:00) Azores",
+              "description": "",
+              "value": "Atlantic/Azores"
+            },
+            {
+              "name": "(GMT) Casablanca, Dublin, Edinburgh, Lisbon, London",
+              "description": "",
+              "value": "Europe/London"
+            },
+            {
+              "name": "(GMT+01:00) Amsterdam, Berlin, Paris, Stockholm, Wien, Varsow",
+              "description": "",
+              "value": "Europe/Paris"
+            },
+            {
+              "name": "(GMT+02:00) Athens, Istanbul, Minsk, Pretoria, Cairo, Jerusalem",
+              "description": "",
+              "value": "Europe/Athens"
+            },
+            {
+              "name": "(GMT+03:00) Moscow, St. Petersburg, Volgograd, Kuwait, Riyadh, Nairobi",
+              "description": "",
+              "value": "Europe/Moscow"
+            },
+            {
+              "name": "(GMT+04:00) Abu Dhabi, Muscat, Baku, Tbilisi",
+              "description": "",
+              "value": "Asia/Tbilisi"
+            },
+            {
+              "name": "(GMT+05:00) Islamabad, Karachi, Tashkent",
+              "description": "",
+              "value": "Asia/Karachi"
+            },
+            {
+              "name": "(GMT+06:00) Astana, Dhaka, Yekaterinburg",
+              "description": "",
+              "value": "Asia/Dhaka"
+            },
+            {
+              "name": "(GMT+07:00) Bangkok, Hanoi, Djakarta, Novosibirsk",
+              "description": "",
+              "value": "Asia/Bangkok"
+            },
+            {
+              "name": "(GMT+08:00) Beijing, Chongjin, Hong Kong, Singapore, Taipei , Perth",
+              "description": "",
+              "value": "Asia/Hong_Kong"
+            },
+            {
+              "name": "(GMT+09:00) Osaka, Sapporo, Tokyo, Seoul",
+              "description": "",
+              "value": "Asia/Tokyo"
+            },
+            {
+              "name": "(GMT+10:00) Canberra, Melbourne, Sydney, Hobart, Yakutsk",
+              "description": "",
+              "value": "Australia/Sydney"
+            },
+            {
+              "name": "(GMT+11:00) Magadan, Solomon Islands, New Caledonian, Vladivostok",
+              "description": "",
+              "value": "Asia/Magadan"
+            },
+            {
+              "name": "(GMT+12:00) Fiji, Kamchatka, Marshall Islands",
+              "description": "",
+              "value": "Pacific/Fiji"
+            },
+            {
+              "name": "(GMT+13:00) Samoa",
+              "description": "",
+              "value": "Pacific/Samoa"
+            }
+          ]
+        },
+        "language": {
+          "type": "string",
+          "description": "lorem ipsum",
+          "title": "Language",
+          "enum": [
+            {
+              "name": "Argentina - Spanish",
+              "description": "",
+              "value": "es-AR"
+            },
+            {
+              "name": "Australia - English",
+              "description": "",
+              "value": "en-AU"
+            },
+            {
+              "name": "Brazil - Portuguese",
+              "description": "",
+              "value": "pt-br"
+            },
+            {
+              "name": "Canada - English",
+              "description": "",
+              "value": "en-CA"
+            },
+            {
+              "name": "Canada - French",
+              "description": "",
+              "value": "fr-CA"
+            },
+            {
+              "name": "Czech Republic - Czech",
+              "description": "",
+              "value": "cs"
+            },
+            {
+              "name": "Denmark - Danish",
+              "description": "",
+              "value": "da"
+            },
+            {
+              "name": "Finland - Finnish",
+              "description": "",
+              "value": "fi"
+            },
+            {
+              "name": "France - French",
+              "description": "",
+              "value": "fr-FR"
+            },
+            {
+              "name": "Germany - German",
+              "description": "",
+              "value": "de"
+            },
+            {
+              "name": "Greece - Greek",
+              "description": "",
+              "value": "el"
+            },
+            {
+              "name": "Hong Kong S.A.R. - Chinese",
+              "description": "",
+              "value": "zh-HK"
+            },
+            {
+              "name": "India - Hindi",
+              "description": "",
+              "value": "hi"
+            },
+            {
+              "name": "Israel - Hebrew",
+              "description": "",
+              "value": "he"
+            },
+            {
+              "name": "Italy - Italian",
+              "description": "",
+              "value": "it"
+            },
+            {
+              "name": "Japan - Japanese",
+              "description": "",
+              "value": "ja"
+            },
+            {
+              "name": "Korea - Korean",
+              "description": "",
+              "value": "ko-KR"
+            },
+            {
+              "name": "Mexico - Spanish",
+              "description": "",
+              "value": "es-MX"
+            },
+            {
+              "name": "Morocco - Arabic",
+              "description": "",
+              "value": "ar-MA"
+            },
+            {
+              "name": "Netherlands - Dutch",
+              "description": "",
+              "value": "nl"
+            },
+            {
+              "name": "People's Republic of China - Chinese",
+              "description": "",
+              "value": "zh-cn"
+            },
+            {
+              "name": "Portugal - Portuguese",
+              "description": "",
+              "value": "pt"
+            },
+            {
+              "name": "Russia - Russian",
+              "description": "",
+              "value": "ru-RU"
+            },
+            {
+              "name": "Saudi Arabia - Arabic",
+              "description": "",
+              "value": "ar-SA"
+            },
+            {
+              "name": "Spain - Spanish",
+              "description": "",
+              "value": "es-ES"
+            },
+            {
+              "name": "Sweden - Swedish",
+              "description": "",
+              "value": "sv-SE"
+            },
+            {
+              "name": "Taiwan - Chinese",
+              "description": "",
+              "value": "zh-tw"
+            },
+            {
+              "name": "U.A.E. - Arabic",
+              "description": "",
+              "value": "ar"
+            },
+            {
+              "name": "United Kingdom - English",
+              "description": "",
+              "value": "en-GB"
+            },
+            {
+              "name": "United States - English",
+              "description": "",
+              "value": "en-US"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "resources": {
+    "Clock": {
+      "id": "Clock",
+      "if.interfaceAsset": "true",
+      "title": "Clock",
+      "description": "Identify current time",
+      "templateDesignAccelerator": "Clock.dax",
+      "methods": {
+        "resume": {
+          "id": "Clock.resume",
+          "path": "resume",
+          "title": "Resume",
+          "description": "Resume the clock",
+          "response": {
+            "type": "none"
+          }
+        },
+        "pause": {
+          "id": "Clock.pause",
+          "path": "pause",
+          "title": "Pause",
+          "description": "Pause the clock",
+          "response": {
+            "type": "none"
+          }
+        }
+      },
+      "events": {
+        "dateTimeChanged": {
+          "id": "dateTimeChanged",
+          "if.category": "Clock",
+          "title": "Date and/or time changed"
+        },
+        "dateChanged": {
+          "id": "dateChanged",
+          "if.category": "Clock",
+          "title": "Date changed"
+        },
+        "shortDateChanged": {
+          "id": "shortDateChanged",
+          "if.category": "Clock",
+          "title": "Short date changed"
+        },
+        "dayNumChanged": {
+          "id": "dayNumChanged",
+          "if.category": "Clock",
+          "title": "Day number changed"
+        },
+        "dayStringChanged": {
+          "id": "dayStringChanged",
+          "if.category": "Clock",
+          "title": "Day string changed"
+        },
+        "monthNumChanged": {
+          "id": "monthNumChanged",
+          "if.category": "Clock",
+          "title": "Month number changed"
+        },
+        "monthStringChanged": {
+          "id": "monthStringChanged",
+          "if.category": "Clock",
+          "title": "Month string changed"
+        },
+        "yearChanged": {
+          "id": "yearChanged",
+          "if.category": "Clock",
+          "title": "Year changed"
+        },
+        "timeChanged": {
+          "id": "timeChanged",
+          "title": "Long time changed",
+          "properties": {
+            "hours": {
+              "description": "The new hours value",
+              "type": "integer"
+            },
+            "minutes": {
+              "description": "The new minutes value",
+              "type": "integer"
+            },
+            "seconds": {
+              "description": "The new seconds value",
+              "type": "integer"
+            }
+          }
+        },
+        "shortTimeChanged": {
+          "id": "shortTimeChanged",
+          "if.category": "Clock",
+          "title": "Short time changed"
+        },
+        "secondsChanged": {
+          "id": "secondsChanged",
+          "if.category": "Clock",
+          "title": "Second changed"
+        },
+        "minutesChanged": {
+          "id": "minutesChanged",
+          "if.category": "Clock",
+          "title": "Minute changed"
+        },
+        "hoursChanged": {
+          "id": "hoursChanged",
+          "if.category": "Clock",
+          "title": "Hours changed"
+        },
+        "secondsInAngleChanged": {
+          "id": "secondsInAngleChanged",
+          "if.category": "Clock",
+          "title": "Seconds angle changed"
+        },
+        "minutesInAngleChanged": {
+          "id": "minutesInAngleChanged",
+          "if.category": "Clock",
+          "title": "Minutes angle changed"
+        },
+        "hoursInAngleChanged": {
+          "id": "hoursInAngleChanged",
+          "if.category": "Clock",
+          "title": "Hours angle changed"
+        },
+        "iso8601Changed": {
+          "id": "iso8601Changed",
+          "if.category": "Clock",
+          "title": "ISO 8601 date changed"
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN2",
+      "data": "XERKTdCFsTBzN5RxOkjaZp+Fz33xtlpqGzSXqIjCbAXVdn/PADob/deYBDZ1Ira/oL6WQrWT5QEoqQPiU8EewVMT8ZNM8nsfP3uYk4GrryfETIwzFfrdE/wiFa5rzgkVJSBgJGMxwS/2yjenSajSB/2MQfLoLDYZxU11sWUsitaUcwCtd43usILUCtS3y3muGVDTCWeicZ61DlvWMe1rQ4H4GvbxRoj1IcKYaONA3ZLMCTqHn4Dhir9civ6AEUxqc/eV0TxJNigxEKu+7HqmnUcEqz0tfvtBzvtHB0ARet2qlI9Nvu1KHUvbGnsHx27UyP7VGm45WiVdlXp6c8jp+lmxKJ07sipClEuveYR6OwWIx9NB34ffD5VzqnJDO3IsNP9zBuHcaiG+wfGstb1kPSV+gAMa6muy9oRK+UyV7LPKqYWjEV35obnk7p7nGX4XjJEOEZTpp8pomNxoLIvVWB/1C24e+dCI0AQhSIV2ZXbEXeNNcbrczAKYTaAa8kLhDW7c7U6D1kslOQRC/zhM0NCr7xJPj5gwPjZE0qw0a+3qzlGLqGdni9B6fGBkPtE07HfriwTW/ZIgtocPMUTWtXYrke4QTReRniRVutFINU94RarCzKwkm0YgM1zuUxZFdglt3SieNEHsarVVX13rgZgmf8MAtSu/gzEN3QfpmYaJ04DfAgGcOAvriruoxEunJZTRwMJYYRUYh9gsPRgqWzQAM8vjTswlgH+0fNHiidS46imK0lY/wIeYQ2c7CW7hXI8fzzrV1+tyblPADtzUKDzdg1FYdxqbSC5V8bY1FyJ77+ZQDZ0c4sYhukmRT8lNO81wFqjU63p2BNS7bce59liPfENdzB4MfUWK0S1aOdbEfv5YZUrOgMHIHerAc2UPLM2q4nSFg09EEBe2hveiKkPG0hAdRRckyBZFT/Gi4mIlOWgY12J6AnP8lv/nzhv5tSKGEa8eQf/Dfn1bObFIqg8b6g8AQoRtoAOJWuQQvJDOFZKD5qqasjIjLePO/ZpfGD6LFwkOqocHlaxdsMLY+BLV7NWE/2sYBAXORDvPiZuqi2cs1Fa2d60WXkVn3XIObVnIG8sWFtthQsBOtIPUqg5rtz5ECYveDApQNTfOs+JqUZ2S4br+eV8ssClfjCkS3Fu3LNn3DAztG+NJJezb7eN0RbprPEvLwvSf6zr0aLEkTHC7rQNTnL55qV+P0uklyBvzfL8YTuhOKSR1mwtdRAfGYvQs2S1Z/YVCtASeH60TDLKz4307rlT3eYi/Oily1j0T59Mz9TZF5nt7B0DvH8f4rBF5oxNWctBE10VKPCWcE109DdkwAqG3llbUosbbEKihY8q/KcTuqnBkIiDEN2T9g7ERg/zNnMwDH2lYydPZlWjvcpsc6yxe2j7RMesyzEAOm1ec5cxHtX0kDdpOk9hTCeTlS5yA/U/2Yv4Uj4wZ5Mza9EtWxZbKxj+Z/f/T0HknLIxvKsdcVJHajTIETH024mhUC/SMfGH8WVwnfG2US2WstTxguPYx5SizTDaqeE02OuA1HBRXK/dg7jmQ1CA2l4a41mMDPvmyCqvEQ8UFDPaRF/G6bqlw/5p86j8+W+PUWPuQS1l5Y0DmLlnkFH28+rig2Z1UK9k6bdgpQz+c78h7wWolMOGTxT/5UnurwsmuQ8I/+Gh87IMVxML7SU4BMBPewtK0ADKIxxPPnB3L3Swzd/JkBxQ0rIA9lgeN0/N6wZLPymdoCqPGHaJa3fBKUNR7CDJ852vXX1ViHfO9tpFIeFB5eHlpTCSrGyFyIV5Nu1JoM3xJtaJRf/ka0DsMOKQiY37S1WH6Kj/YiDOOw1GzpFXxTLPaYgA0VSeACTwXnDGukfYS4ARzV7iUTw==",
+      "key": "TaLh1Qg/UzkNdT1euA4h7kHJ+4uYb1KSGTlHATYmrGniu4DNhL2snYPMAHh+8XkCsH5MhOPWgLVYxAmNBtI8kvc2n+gdii4Ry5JoCWySZuef6GX91QgYK/UZGHYyxtAKgl8nohthy3y632WLm9c/PwPs5f3gU/pBSrOO8UFwOBjf2QJ2O+vQJE2EQXBAPLWk6xcjkIowyRjON1Xj8KA+IQt3ooBEfaeQccHMo8KWlfbonqS1IjB4auFAR3kvhD64MqVKR9gn3nOQvLJmT7pB954FDlTcu1LUIFiWuOxBPS26yrZ1N0xQSXYlVvWfh3lZjVbRKeNerHepEhVsa9t3yQ==",
+      "iv": "RB9/oOPm3ZQoF1fvxdRIuQaOOSRTJoRQ4/gixpfR826ZIBlho2IunmIHvNLJ1ER+aV35TdkPWwS2fPC+ED/E62DWdAFsK7wHz1R6Ihq8pTkJDPkhLof7TnNujBV7OCzqTfQ84b76C00vwpuCntE6pNnmaSffzU1p2eVpuF5iONkj98xoFUzHHRE2YwBY7mEebxEliBu+1szq8qQPNVotyKh23aSYzlvyVVaeaYYINjGWLFjeker/pOanEwfIcTAeovCYNfEXHm92SdxIITed4MIIF6JoszkJcg2XP4ZZCdtqN9FnxDt+44rzA9tM+KHD9LvDhNmsVQS8QQtG4CMY2g=="
+    }
+  }
+}

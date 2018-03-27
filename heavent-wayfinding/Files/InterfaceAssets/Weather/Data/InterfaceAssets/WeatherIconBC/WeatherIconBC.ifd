@@ -1,0 +1,78 @@
+{
+  "kind": "discovery#jsDescription",
+  "discoveryVersion": "v1",
+  "id": "WeatherIconBC:v1",
+  "name": "WeatherIconBC",
+  "version": "v1.",
+  "if.category": "Weather Icon",
+  "protocol": "js",
+  "basePath": "WeatherIconBC",
+  "if.dependencies": [
+    "WeatherIconBC.js"
+  ],
+  "schemas": {
+    "WeatherIconBC": {
+      "id": "WeatherIconBC",
+      "type": "object"
+    }
+  },
+  "icons": {
+    "x32": "icon_weather_32.png"
+  },
+  "resources": {
+    "WeatherIconBC": {
+      "id": "WeatherIconBC",
+      "if.interfaceAsset": true,
+      "description": "Variety of methods for modyfing text",
+      "methods": {
+        "codeToIcon": {
+          "id": "WeatherIconBC.codeToIcon",
+          "path": "codeToIcon",
+          "if.converter": true,
+          "description": "Converts a weather code from World Weather Online into an icon",
+          "title": "Weather code to Icon",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "iconPackage": {
+              "type": "string",
+              "title": "Icon package",
+              "enum": [
+                "Originals",
+                "Minimalist-White",
+                "Minimalist-Black",
+                "White-Classic",
+                "Black-Classic",
+                "Color"
+              ],
+              "enumTitle": [
+                "Originals",
+                "Minimalist white",
+                "Minimalist black",
+                "Classic white",
+                "Classic black",
+                "Colored"
+              ]
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN2",
+      "data": "QSZoyEB2RByMcs9KvX8pirEF+d0wMrDBVtQbz5YeaK1PsCepGE2+WZyIWQSYfcqcNXPOL0ibm9p648ZAE1PRrxYzYnwf+IQyR5H4Znee9DBwW0YfjZEyzOe8fqWg2oNv7/wO4kQJf4+if3NisdG0dBfL9mj3Lrha8sSonEPWOHPAq5RoIeB4TISZ7+tIcrAZD0WX+NtqjP4QNIYi8viSf1cnaUX8yUkBnRE3ssjIUIn1/HBNpMfIPHCt5I+AihoQ1zaYEvBz4aYaFWmJnXcSWZUhkdRTH0RiE8ZB0SZhZTVAawOAO+6k1Xd53ivjkHqgd39+fvc8MrMsXsVGp1hx50Z2ii4PLgL/PjRxZ54xksweDU3n7JbQ+iiDiDO/n1ACZ6YWOhuaP9Wls5quaDOvLUcCnAGmy1vWWORXuLu92DX8oqRI2qP24h1v1lhtBspo14hKXH7neVC6MrVV6enfBU73LElZncOM67RxbMYrY/iWx0/MwOWfjmwD+0AyvLOSN7SUmp6zjVtatMBaLHRyfz2RLf0pOyozVFx2FJCLkzLOQ78MTPZFaQiwm0mrDBIlnzeZfFCJkT79kB1kb4dYYc3wtCmR+/tCPudkPb0AAj32oA5wbcl9ZIX6mZQPxMNkNS/y2lNIqng+GDF54QpXdbm4rBcruVoRM5c3umWU9tZe6wHn4vSo49QDYEixILqqOg20DRh4w4+8zgFO3ZHSDf2ZJLXZhfdoVoqP1M6+XStJG7qOvmiieK9pXxpZo7Dnh4EGQCJiYnaC0qsTf1ghqFyEj8EjEQX1b+c49+H8TI0Z7XVsDgYDpvH2BIf1UzG1w0TOXTfkYZRnwWp7aTwOtNXpEuPc4Hg5rTNfnqGvBR1B3M4lFmjqr9/Et54SZFGc4oCOHSdi96zcuL9YuHI7yZIV7OidxpVPGY0Zw5Yt6h05pDWHd2Y7brNdL5rpd9VxL2ecyK56rEV7uKe9sCpKXtr/1+/HaXXZVG8Tt2t120KEn2sAFlSVVSaESmzdrooFI2KO6Hy5xdef5B+V1LgrXUcEMzGrHImvUCCe4kQR53C89wB1J313cVNqMwN7/Hc6oJyzxJVt3nvVNNfcLZ24WIdj5FrUWOW6BDzuZ2O0+WMLWDs9p1jb7/d3BSv33381oc9lJDoRLwahKKyV85cnv+8DiZrf6kptzUmog7KTKuK4x4FZlu4CXaMWFkUCjtIpOeP3dcbJ2R8TShpbw/3BgWRHltaejxRPE4mknSVhX+PJWjlYThKWEK5WQKukZDLrQ5xF9UyXBI/juwikPCogf4gDnorIl1uaQe3jS6PVODBsfhe6n9llMUmn197L/BP9u2w7IIO97GJgUYMooJV7uz7ZPHjkgxSY+5XBt8uTA6TE+/aDPtheH+QxIVchdBxvprUqtkqlUgrHCVyk76+NaebqDsaHyUaDZKs2JP921DeXWsVizXF6E75toFFKt0wIbJpyqIFufc/XDOq2DFG0GZ544OxYDI2NuVstt9+f8Y6sQSBTDsvBdMKwYmm+D4W/YpyCkdD/12hcMdVju4CqQmxX+LgqJFoWUUcGUabbaz+3AYhYhLgPf8/d0+WfpQxePfRQir2DmnQLkdm2rHTyknuKUfeh79GhtPZcHZJMXl+RnFhRJxZdBGEFSxmzJH79NLQhAQzosvfBAAslB8zUt9E6R807U2zBq03SmhM8RoKeXaaTdz7OLgcRPxeF1OnUdj6BUUmShsM+Zx7GBfKZeiTRsgpoSWRYEJlFDS5yjlzkE9yIRis4R9kc9q1h40J4GsH1GW+ZcFWM7sbS7R/64OyxY9pU4rOHS6mZCKyPje/4deTwW+bTV52prS41h+IpFib/Sf9KEdaopTxFbIEIDQ==",
+      "key": "WPOZ3o9j4UWjF+1t7OVRZUUIbCEsYmLYOiHZQQ6Ab+tNE98bN2zqdcyQkyedRRfh4GATtLBbfiZw0Ppv7dNUbcFTllpI+TSH8cxsGm0Z1OgypLi5OMmuK5/jZlGC3rLSvlYsmYiqiopElsnGpqrZA7rfWwEQ/vi5OI/gQpsgouyHx4o/U/3xxlN8gdJ98EgzMxoED+eMlnImlmf9CxWi2OQ1fd5ByEGND35mzVELj5RbCB+VVKDHpZ708qLWjwBQlRUY9N7McASI/fsaE5ggDRAN4Blo0MmyucLdu6njCBQ1R1qPevn6V1UIJ54+TdqwgmAx2w2+AMOhMRQBh63rIw==",
+      "iv": "oocBTpI1c+h0x1AcHkodOPJilr6OJbvGtnDtSBdQ5vb9dXYk8bXGtvZ/DTq+4w6DxCphYYjD9DbFIOVpmxwKCZ0L8hl/1E7TVolXYKDiFO2wlU9cok//ggNAWNqRp8VSkqQ8VPxkjDjq1LSVenaBN8Pa72lqEd0osR74BDlvzP6USSn/qkTETIP8/7iXEfuUBzqp3AFZiB0Lk6rleeMZwtt5pzQKcvygqhZ6r1AEUtUDGrWo9gZzQ5B0zJZoacJhYVoBnnaGq04oYx1f9exjZkbPg226/ax/KZ1FybL3B/F/WlIzQZ5maEkqlta+maoC8fJ6xRw3B0VRe15A7E2ohg=="
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "BDD_HEAVENT",
+  "name": "BDD_HEAVENT",
+  "version": "1.0",
+  "protocol": "excel",
+  "baseUrl": null,
+  "basePath": "",
+  "auth": {},
+  "dependencies": [
+    "BDD_HEAVENT.xlsx"
+  ],
+  "schemas": {
+    "BDD": {
+      "id": "BDD",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "BDD.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "BDD.Row": {
+      "id": "BDD.Row",
+      "type": "object",
+      "properties": {
+        "Nom Exposant": {
+          "id": "BDD.Row.Nom Exposant",
+          "type": "string",
+          "description": "Nom Exposant column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Description": {
+          "id": "BDD.Row.Description",
+          "type": "string",
+          "description": "Description column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Emplacement": {
+          "id": "BDD.Row.Emplacement",
+          "type": "string",
+          "description": "Emplacement column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "X": {
+          "id": "BDD.Row.X",
+          "type": "string",
+          "description": "X column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Y": {
+          "id": "BDD.Row.Y",
+          "type": "string",
+          "description": "Y column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Logo": {
+          "id": "BDD.Row.Logo",
+          "type": "string",
+          "description": "Logo column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "PlaceHolder": {
+          "id": "BDD.Row.PlaceHolder",
+          "type": "string",
+          "description": "PlaceHolder column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "X map": {
+          "id": "BDD.Row.X map",
+          "type": "string",
+          "description": "X map column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Y map": {
+          "id": "BDD.Row.Y map",
+          "type": "string",
+          "description": "Y map column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "X picto": {
+          "id": "BDD.Row.X picto",
+          "type": "string",
+          "description": "X picto column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Y picto": {
+          "id": "BDD.Row.Y picto",
+          "type": "string",
+          "description": "Y picto column",
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "POSITION": {
+      "id": "POSITION",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "POSITION.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "POSITION.Row": {
+      "id": "POSITION.Row",
+      "type": "object",
+      "properties": {
+        "ID POSITION DE LA TABLE": {
+          "id": "POSITION.Row.ID POSITION DE LA TABLE",
+          "type": "number",
+          "description": "ID POSITION DE LA TABLE column",
+          "format": "double",
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Test": {
+      "id": "Test",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Test.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Test.Row": {
+      "id": "Test.Row",
+      "type": "object",
+      "properties": {
+        "X": {
+          "id": "Test.Row.X",
+          "type": "string",
+          "description": "X column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "Y": {
+          "id": "Test.Row.Y",
+          "type": "string",
+          "description": "Y column",
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "BDD": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "BDD.Row": {
+      "icon": "excel_icon.png"
+    },
+    "POSITION": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "POSITION.Row": {
+      "icon": "excel_icon.png"
+    },
+    "Test": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Test.Row": {
+      "icon": "excel_icon.png"
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "ENTERPRISE",
+      "hostname": "DESKTOP-215QVLP",
+      "data": "xkvZ1VxzuGvcSzgf8cj8SN6X6oxBpfLSxvuBaTA3qrXVZOh1V7riGhC8dxaBK4Iyy4r6w98Mf2XBeZeFovNERQyu86aIyUOok1liqHRsomX15iic74mMALuK4RF4tuH9ehbEv2lzWV1O3bolTlNjX73pRDlQ24MMf7N8paKz3ksGO2GxmO6c5kWl7iXgIGbPR+/8Y+V+xa7PjGbCBAOtCsD/qAuB0mZZF/3jx9jXi80x+spQOFhT3FQj0LpX6m7zi0R2Cp90InDN/ueqCEI5svjckCE8GAkqtzZT144Rv5fQXgxF5myc0jqSCNLn3+7/NPGyh8aGWSXGhkL0DbhV8wq2+ZHAFf8+Cx2lJO38iHXiHtGDaBp2PhfkIS3JRExveSgd+9ZPp3jiZXrDtI1diqqGIn8x/WbBppNm9WLXK6MLw6Unoq65Af9wDP5ttwV9wAsFIM4UrUChxP7g0KsYygjbvYj8yZAq+Q0gNUH4pfwVSkZo4sh++okCt1bS2Sy+/UfiJz92NevsQf65QeckyW5opqOtcs2FX9heeUlXQI9CGayqZ08Fs73SeD0kc12uyucNy8UY2r8kEZ1kgrj9XFJCbHL59Ilntqp4BOom5jKDdWiDUT0/9iLb/i3xRUoZ6GH0afhRhu8GStJ3rpBmdzeYP9Xjps6I9Y2qYoFaKhIGZiFZUWEnz1YOldEmwHvjEyIUrqri5aKowkiOXWLbFs4FRt5yfWMZAOKMEhej61L0U5yrDboDnYb6XR7qJqjIBxYTrVO8nPUHbDGrqpsEh+TSZHm0xCvQsmkjJzJw3oLz4pmu1R44EHr9RjXrKxnu/hL0wAwL+YCIFywJSvV4EU8aPOSyi+Vps4VlKXxQczULf3//icwTRR77Lt8CFtJTpVcH6eyFlqA684R7gizmkVGWyNsuDHmco++w3Mt3VK7yjNIg1/hC5OzHAdSbXJwpKK2VHpeR+dUzFCRsjtJuoHzIaW6PAJdtb+nW2IcYBo1FcPoJdI9y6rSjOI/KMQYkOoKG/XQ1rZFTCki9VhFQI+MnaLRAFdButCoVYQ8rpqkDX/Q8gTV7Vrl0PPry3v9QSm8ZWNmZ2zeyfu57G3vp763aJc/DSZ53/Sm4kdlCFanfFoIbhrKDLhcmxpXZ+EfqXS5q0ryMLvgOUe/u3wlMlEP+FNhoTkUtDymKAjZ6bHREvdCofS8CXJuPbHmGHqGa171H6PHiQvmHN8CJcGGt8cCPQgvnNj+Q+l7+xsPRLMgx738wfNZVEqpOQw8iZM7hUoXoTaelLsiVnFU1nURa2bk/wu7MhdIjpxUROybUv9GyoBytP2HU2qGxiOy1VnA2W+SadFT2BMP5p4nVbX1P7hd9RyfdNj1e1kRjiAf6qU+jxeEfFGC05PXCvRGRj/OR/9eyRz+Vh+6wQagpKK3cgcGKqkhlrNVqLbxXy5BpRb/GwLIQuZFKv0/b+8kgMjIXoCzpWXfsDBxBPCTZymuRtfDWo3BiD0/33h1DzN83oHpZx/Zl324H7ERnCGZf3EVJq9iDZt9dHlNpgzHt3vQvm0Ijv0QWKLlSFoSRsajjlKlJL+bjAtwQytlhsWZIt0Dl05sn8UWcFZmQeHlIWTwXtk9pUa8Z0ItqFWCM0XpPb34nYzCsU1pf+9lQgqzmz1yiaJUOVmQq34Jgg1jG4w1tU74DOUoJHPrNG0J4FZLQ3GAwDqiqjQxQBjQglsYuf6uqG8L6PxxPvsKOTdeh4IPeszv2glqtqs7NpqMQXlZXTele9sa0onGRbO79mzNF8ZPk+D8tpnmKEQnoxRVDVefw6G+lf/dpWEhBEklYE3bqAM+P5PnIG44bmP7n333HenPfskbXctJvVFUvVhTUEKxrycnw+g/QK18qfXOPyscAGj9nId6vjJIUZdYGHwYYFFBAu2njWJVGnqVLBdwKAJIAKPGFAl9LQMd0FDzsiZpLB3mIMjZybywIFBr5zjcL82gPxXeuGXozUpkWHF2QD8slKQILtlf55SFvVhEsvke4C4MSXeqka6SFDyJUDzusxDKjCxoJjUeq0jSZoJkw4js/Qg==",
+      "key": "U2a6OrqSIybESkE/jPncoyILmgOKghFM4JGglZcNZBk72KAcsfYz32nIsAlsRp5+61p3rhjMqi2W6tEtnj6OfsBOAvZRJ5v8L+YAUp9nkWVKOTN+rnh1PCUf8UPVxCCYSgp0urfQP2+4i+71HFd5DOAdWnONbzROjJs61t3L9GiaVpqLyh5L6yXK+vgYFl33nkHBODZQYBKCdRwY0z6pZ3Pl7EslJagyK2tdLLX88RYUQHTLfxDtnc7OKA2NY1vfI2AIJbtslHy0Y1T5SnZMMkyo9EoE3agFqCrLFFny4gnCoh/34LZHy4CiSd6Sw5eboJOmHkNR0MTvShxoO6xTvg==",
+      "iv": "cSm37gb3sqGOd3H2iBnHehessDWAaP/I7QZwC7SSm8j5p42XsgyhotLmGjSENtTzr9bP/ndA07/BgpiUO0FSlSeeRhjuQtCFmuBmVjAmr1aTMzHrICc4JOQjbOjASXA6KCMFg32OkvGvb901ca436KuXDnMlfirtRAK9viP+SfhZETb4rIGMBex2EUJYTqXowTNqY4pcmvDj9fS2gK1ZingaZE4N1cTQK9aJ9hcVZsLJQucBdVF/KqldJdUKccVZZqy7K50VTWAMiTNaykPyvXuP6QzZUgfV7fnJgJ6d3APZcNRpQWrrkUI9Yfx3zc+j1E4ZpL9hqAqA+I9brdEFQA=="
+    }
+  }
+}

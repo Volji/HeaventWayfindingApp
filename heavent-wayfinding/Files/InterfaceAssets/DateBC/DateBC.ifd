@@ -1,0 +1,136 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "DateBCjs:v1",
+  "name": "DateBC",
+  "version": "v1.3",
+  "if.category": "Date Format",
+  "protocol": "js",
+  "basePath": "DateBC",
+  "if.dependencies": [
+    "moment-with-langs.js",
+    "moment-timezone-with-data.js",
+    "DateBC.js"
+  ],
+  "schemas": {
+    "DateBC": {
+      "id": "DateBC",
+      "type": "object",
+      "description": "DateBC"
+    }
+  },
+  "icons": {
+    "x32": "icon_date_32.png"
+  },
+  "resources": {
+    "DateBC": {
+      "id": "DateBC",
+      "if.interfaceAsset": "true",
+      "methods": {
+        "dateOutput": {
+          "id": "DateBC.dateOutput",
+          "if.converter": true,
+          "title": "Format",
+          "description": "Format a date. Click [url=http://support.intuilab.com/kb/binding-and-value-converters/date-format-converter]here[/url] for help.",
+          "path": "dateOutput",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "format": {
+              "type": "string",
+              "description": "format value",
+              "title": "Format",
+              "default": "dddd, MMMM Do YYYY"
+            },
+            "language": {
+              "type": "string",
+              "description": "lorem ipsum",
+              "title": "Language",
+              "enum": [
+                "es-AR",
+                "en-AU",
+                "pt-br",
+                "en-CA",
+                "fr-CA",
+                "cs",
+                "da",
+                "fi",
+                "fr-FR",
+                "de",
+                "el",
+                "zh-HK",
+                "hi",
+                "he",
+                "it",
+                "ja",
+                "ko-KR",
+                "es-MX",
+                "ar-MA",
+                "nl",
+                "zh-cn",
+                "pt",
+                "ru-RU",
+                "ar-SA",
+                "es-ES",
+                "sv-SE",
+                "zh-tw",
+                "ar",
+                "en-GB",
+                "en-US"
+              ],
+              "enumTitle": [
+                "Argentina - Spanish",
+                "Australia - English",
+                "Brazil - Portuguese",
+                "Canada - English",
+                "Canada - French",
+                "Czech Republic - Czech",
+                "Denmark - Danish",
+                "Finland - Finnish",
+                "France - French",
+                "Germany - German",
+                "Greece - Greek",
+                "Hong Kong S.A.R. - Chinese",
+                "India - Hindi",
+                "Israel - Hebrew",
+                "Italy - Italian",
+                "Japan - Japanese",
+                "Korea - Korean",
+                "Mexico - Spanish",
+                "Morocco - Arabic",
+                "Netherlands - Dutch",
+                "People's Republic of China - Chinese",
+                "Portugal - Portuguese",
+                "Russia - Russian",
+                "Saudi Arabia - Arabic",
+                "Spain - Spanish",
+                "Sweden - Swedish",
+                "Taiwan - Chinese",
+                "U.A.E. - Arabic",
+                "United Kingdom - English",
+                "United States - English"
+              ],
+              "default": "en-US"
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN2",
+      "data": "JJzRlAPH7YZULiSG+GbGNbDmwS6AfTUBtPsWTlnvLqNQBAQIMGaRLbD5ttI40pSn0W9ES9PjEJedGFbFSAdNu5W+gZACrMRdOjZrrUCXQe0HxyO5l2Z4tDqC+GFcdUbN1f3AluJHk9gQalC3FoLzo5Wuq8mCc+Bw/LDo2kK67j4VsCMU6q7MCGS/oGMeuoI/UcJjciCq4nLFu/FETOnEsrVuHo09dK37mFUAu3jK6CJPf27hpPxE0jzXnz52M5uWu+pVnhhfisDQB+GDJO2Gl544iTi2F1bWen8SaU4/ZUs9bFcvzNpofaBpyVI3erniuAIinrHisZCoyCeWHk3VDx/R8+fyDLYnkjcPeKXxijEHHl7D77FGD9B2P2mNbBZwp6HFAIJVIys8FkVxWXX8bXouzTPO6D6frfxVq3Yex7HCkjCmS2AlhFgbQXL+RomBT6UBxOnrt4NFGhlqXs3n2tNL5QcTGQdzbEuq54T3hr3Waba22HwGTnIfsgo9+2dMi1xv1v+/vKlTHCW7kBPthBN5BNn5404E7/qXCEDNNMvwdigmyedXfFn4vyvMvvsmH5f97yV3GwDhAqDa5hz654vwswZeVc05aACR7RfTFiIgMTC+scYnUwSa+nUqUXDpWJNdLHoXBcA3glnHfli9rznCbpPtq994gTOmhAy3Snw98ndgnJxwri7p1xn+wzzxFOTgFIPb3GD/Hry1Q+M+29kur7xOnQ3F+N07ADT5xa/tMZxiTtYDL+/7PesKbTa/dz7M05X4BwKT9+lsi1cyiuaRHRT4uuaKndUli8bOdnbiHaiDjsnMsUVkcpZP8AnySlRYdup6spK3sVgSdUrFS5z/vne/NohaqJWyaQWkBHAr8dj9OKEQVPNynS6E+4Cc2/1G75VU26zObRFO9cm+KKrVcpTD4K12M0io3vh3/+mIJaoal++e3HPr2Q4aOhI3E4moBwGDEbOpQGqzXFgU6UmAixbKujo3Fw9RwXIFkffEHKQMIa4WiPb454fqXYohsCFllZ/dKAbbda6C2pNvOT4/lZeAWqBAJ7ewS9o7gkN6NVY3vM1BzIQlDv/Ie+Hzlk4weGFQ25iLlDjOqdV2I6GoDW53dznCLjiIRj0T1oqvQAyhnTMRFeds+1SRGwiic/tjq30hvg6uWW5BJE2965pVLhX8HmK+N4NGecYfD58ySaW7rOkJIoFFaEZ7JDGG/ucruQkXeyejBWH3j+ZAmpDjDaxJAD/6I7dEoEEYOKzvsaVq/Fbv5zIWhAULzM4TgfycU80sA7zcudEB9IWOGjCgU0Mnkkp7eaSCV101ycDhhc7kn3SzBHJqRh1JUdIsRrWUET/u7qKs3uA83FjiOfzqrBZ42nl3cayZC4gEbwzS5oSw477QjQxhCyEs/OV8/micEECEGazerHBnkDlEBVLEGxZtBDCDVGYxa9Bp+WSJqJXQb2IxxYPnTwDZjykOUiBAjUS1ifgHAk4jM/WRNx/wxrfDfpae38e7srKpPLSAU647pnhQDUR+nIRCpK4DLpemKabL68vKup5NdF8MUKgNVtu735056ufLyYMznk3gzwis9HDD8boMkohQci7zJs/ERSxa45ZNR4nyhtxlSRKAf8wgrWip8L8BCz53AEj0xIMxFx3Y7L+z6WtFgnKCjMP51XHObiqb7ME2KpUxIWwMTq+eKPP8F4LwBER7NYfqCLHTiAdLkpRRXM+13wJrEGhl7VL5KzqJZymaUzQFGQju0U+mk1s9EntO+z/O9F558sShRL9sjK29ZhiAFJ4UGJLa0V8DdyHdHpHK2ZeubP4ojFojiUlNzWLTv7sH6tlCBZSvGgbazX8k//w0NJa4",
+      "key": "LwrRP98xBpD6KPqpXIcEJ10bAxYE3p8hecbt3yOqwkOrsF7IcEHD1iczuGTufij0yW+xhrdAfGI1TmzMxwYNlyXz+ABte7gI6WtLVgP8K/dnu/k27+8tb4jWtItHVxOfXJwCpsbHr2OMCxu8PojTmgTFp6cGVhnmGQq4bWN5tiFExP6Z/gpvHKCPGIjFZzoXt9O6pXywbhr0f/NkvKbPjN28qc1Dg8KJ4L1/TRaWR885SasKhP0kmaIQmG5O1ki6ptnVB15Lxr3dfMCrfQYboSIfY24IwFV7qiS3csuSE010FB09NkBkl4cy12IJ5jS0+fagGeYwG2PM0bbpi2wdJg==",
+      "iv": "XbSgnMzpUJhxmTIlbSW3IE7M2UYwB7ttFH+nTAh76eCqef/6qa3oFf7yV9ihSj7jeBRbzzeP98TezmaJAnXHcUIK6OUIwUjh8qdNDXfllWWIWaRt0ZqQD8H3BNB26kqGpiVkg6+IDYWfiC/9YlsmVIK7sxbeaeNm5uLujtDA00jhcKFJfRKM/46elwvaGhOrLarpYq2diGTPPRwoMR/kwX+yM41bMVP/QmDc8iEF7kXcTWA4Jc4GQgSAvdFR0tp5uShpxzaZyOPfFsfzDILTuUASCQcbG5mUNeAshiMh5P6iszfUjPplFzHn2IkeV9v866pa6iiuSyZEhJNlMHeLQw=="
+    }
+  }
+}

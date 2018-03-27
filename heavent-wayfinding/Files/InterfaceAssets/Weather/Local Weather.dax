@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="13" Name="Local Weather" Description="" Category="Weather" Author="IntuiLab S.A" AuthorId="IntuiLab" Icon="Local Weather.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="8252">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/IAweatherV2 - Copy JDE/Space 1">
+    <Space Name="Space 1" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/IAweatherV2 - Copy JDE/Space 1/Middle/Default template for Local Weather" CreateAsCollectionSibling="true">
+    <Collection Name="Default template for Local Weather" Visual="Group" Style="" Container="Default" ContainerStyle="">
+      <ComposerExtensions>
+        <Extension Name="IsExpanded" Value="True" />
+        <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+        <Extension Name="IsExpandedInBindingViews" Value="True" />
+        <Extension Name="HasBeenRenamed" Value="True" />
+      </ComposerExtensions>
+      <Properties>
+        <Property Type="Visual" Name="Axis"><![CDATA[value:Vertical]]></Property>
+        <Property Type="Visual" Name="ItemWidth"><![CDATA[value:575]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:50]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:400]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:400]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:690]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:690]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:45]]></Property>
+        <Property Type="Container" Name="AllowRotate"><![CDATA[value:False]]></Property>
+        <Property Type="Container" Name="AllowResize"><![CDATA[value:False]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="No resize" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:400]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:690]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:345]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Research_group" Visual="Group" Container="No resize" ContainerStyle="">
+        <ComposerExtensions>
+          <Extension Name="IsExpanded" Value="False" />
+          <Extension Name="IsExpandedInBindingViews" Value="True" />
+          <Extension Name="HasBeenRenamed" Value="True" />
+        </ComposerExtensions>
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:370]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:370]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:89]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:58]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:58]]></Property>
+        </Properties>
+        <Asset Name="Text Input-New Location" Visual="Text input" Style="" Container="No resize" ContainerStyle="" Domain="value:Text input">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+              <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/Research_group/Text%20Input-New%20Location/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              <InvokeService Target="mashup://externals/Local%20Weather/" Type="Domain" Name="Setq" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/Research_group/Text%20Input-New%20Location/DomainComponent/Text" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Visual" Name="InstructionFont"><![CDATA[value:Segoe UI]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Local%20Weather/q]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:30]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="TextVerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:45]]></Property>
+            <Property Type="Visual" Name="TextAlignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#CCFFFFFF]]></Property>
+            <Property Type="Visual" Name="TextMargin"><![CDATA[value:10]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="BorderRadius"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:185]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:370]]></Property>
+            <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+            <Property Type="Visual" Name="EditionBorderRadius"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="EditionBorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:29]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:58]]></Property>
+            <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="btnOK" Visual="Button" Style="Simple button" Container="No resize" ContainerStyle="" Domain="value:VisibleTrigger">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="Pressed">
+              <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/Research_group/Text%20Input-New%20Location/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+              <InvokeService Target="mashup://externals/Local%20Weather/" Type="Domain" Name="Setq" Delay="value:0">
+                <ServiceValueParameter ParamName="Value" Value="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/Research_group/Text%20Input-New%20Location/DomainComponent/Text" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Text"><![CDATA[value:OK]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00B2B2B2]]></Property>
+            <Property Type="Domain" Name="Enabled"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#80D0D0D0]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:341]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:29]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50.000000000000007]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Handle indicator top 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/" Type="Container" Name="EnableHitTestVisible" Delay="value:0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/2354050c-1f04-49f7-8af4-70413953e9a9]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:54]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:54]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:27]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Text for &lt;Error Message&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <ComposerExtensions>
+          <Extension Name="IsLocked" Value="True" />
+          <Extension Name="HasBeenRenamed" Value="True" />
+        </ComposerExtensions>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:369]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF343333]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Local%20Weather/Result/info/errorMessage]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[mashup://externals/Local%20Weather/Result/info/error]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:339.49201741654571]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:199]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:344]]></Property>
+          <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:True]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="CurrentWeather" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <ComposerExtensions>
+          <Extension Name="IsExpanded" Value="True" />
+          <Extension Name="HasBeenRenamed" Value="True" />
+          <Extension Name="IsExpandedInBindingViews" Value="True" />
+        </ComposerExtensions>
+        <Properties>
+          <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+          <Property Type="Visual" Name="ItemHeight"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:400]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:400]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:203]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:203]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:223]]></Property>
+          <Property Type="Container" Name="IsVisible">
+            <ConvertedValue ConverterName="value:Not">
+              <Parameter ParamName="input" Value="mashup://externals/Local%20Weather/Result/info/error" />
+            </ConvertedValue>
+          </Property>
+        </Properties>
+        <Asset Name="Weather Icon" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Uri="player://data/DefaultAssets/DefaultImage.png">
+          <Properties>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="TitleRadius"><![CDATA[value:10]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:120]]></Property>
+            <Property Type="Domain" Name="Source">
+              <ConvertedValue ConverterName="value:codeToIcon" ConverterInstance="mashup://converters/WeatherIconBC/">
+                <Parameter ParamName="iconPackage" Value="value:Color" />
+                <Parameter ParamName="input" Value="mashup://externals/Local%20Weather/Result/data/current_condition/[1]/weatherCode" />
+              </ConvertedValue>
+            </Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:120]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:85]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Current Weather descriptions&gt;" Visual="DefaultText" Style="" Container="No resize" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:18]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Local%20Weather/Result/data/current_condition/[1]/weatherDesc/[1]/value]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:100]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Current Temperature Fahrenheit&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF666666]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:170]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:90]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:227]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:65]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Local%20Weather/Result/data/current_condition/[1]/temp_F]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:84]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="°F 1" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:°F]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:44]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:340]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:46]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:30]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Current Temperature Celsius&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:340]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:92]]></Property>
+            <Property Type="Domain" Name="Text">
+              <ConvertedValue ConverterName="value:concatenate" ConverterInstance="mashup://converters/TextManipulationBC/">
+                <Parameter ParamName="position" Value="value:after" />
+                <Parameter ParamName="text" Value="value:°C" />
+                <Parameter ParamName="input" Value="mashup://externals/Local%20Weather/Result/data/current_condition/[1]/temp_C" />
+              </ConvertedValue>
+            </Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:57]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Drop Icon Big" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/434e8d54-6e0a-4297-9ac2-5194d7267fde]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:15]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:18]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:263]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:133]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Drop Icon Small" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/434e8d54-6e0a-4297-9ac2-5194d7267fde]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:6]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:8]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:276]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:137]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Current Humidity&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:15]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+            <Property Type="Domain" Name="Text">
+              <ConvertedValue ConverterName="value:concatenate" ConverterInstance="mashup://converters/TextManipulationBC/">
+                <Parameter ParamName="position" Value="value:after" />
+                <Parameter ParamName="text" Value="value:%" />
+                <Parameter ParamName="input" Value="mashup://externals/Local%20Weather/Result/data/current_condition/[1]/humidity" />
+              </ConvertedValue>
+            </Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:23]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:318]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:136]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Wind Icon" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/271864f1-55dc-407e-8715-66470387ade4]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:28]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:269]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:165]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Current Wind speed kmh&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <ComposerExtensions>
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:15]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Domain" Name="Text">
+              <ConvertedValue ConverterName="value:concatenate" ConverterInstance="mashup://converters/TextManipulationBC/">
+                <Parameter ParamName="position" Value="value:after" />
+                <Parameter ParamName="text" Value="value: km/h" />
+                <Parameter ParamName="input" Value="mashup://externals/Local%20Weather/Result/data/current_condition/[1]/windspeedKmph" />
+              </ConvertedValue>
+            </Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:23]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:328]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:164]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Gray line separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+          <Properties>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:202]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:400]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Collection Name="Asset Grid for &lt;Weather results&gt;" Visual="AssetGrid" Style="" Container="Default" ContainerStyle="">
+        <ComposerExtensions>
+          <Extension Name="IsExpanded" Value="True" />
+          <Extension Name="IsExpandedInBindingViews" Value="True" />
+          <Extension Name="IsLocked" Value="False" />
+          <Extension Name="HasBeenRenamed" Value="True" />
+        </ComposerExtensions>
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Axis"><![CDATA[value:Vertical]]></Property>
+          <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:10]]></Property>
+          <Property Type="Visual" Name="ScrollBy"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="SoftMoveSpeed"><![CDATA[value:0.95]]></Property>
+          <Property Type="Visual" Name="Elasticity"><![CDATA[value:0.4]]></Property>
+          <Property Type="Visual" Name="Columns"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:7]]></Property>
+          <Property Type="Visual" Name="ItemWidth"><![CDATA[value:400]]></Property>
+          <Property Type="Visual" Name="ItemHeight"><![CDATA[value:114]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:400]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:477]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:305]]></Property>
+          <Property Type="Container" Name="Opacity"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="ShowCurtainShadows"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="BackgroundFlat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="FillDirection"><![CDATA[value:LeftToRight]]></Property>
+        </Properties>
+        <DataSourceProvider>
+          <DataSource>
+            <Contract Uri="mashup://externals/Local%20Weather/Result/data/weather" />
+          </DataSource>
+          <Master>
+            <Collection Name="Default template for each day" Visual="Group" Style="" Container="Default" ContainerStyle="DefaultStyle">
+              <ComposerExtensions>
+                <Extension Name="IsExpanded" Value="True" />
+                <Extension Name="IsExpandedInBindingViews" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="Axis"><![CDATA[value:Horizontal]]></Property>
+                <Property Type="Visual" Name="InitialScrollEffect"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:802]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:599]]></Property>
+                <Property Type="Visual" Name="ItemWidth"><![CDATA[value:150]]></Property>
+                <Property Type="Visual" Name="ItemHeight"><![CDATA[value:150]]></Property>
+                <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:15]]></Property>
+                <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:10]]></Property>
+                <Property Type="Visual" Name="ScrollBy"><![CDATA[value:1]]></Property>
+                <Property Type="Visual" Name="SoftMoveSpeed"><![CDATA[value:0.95]]></Property>
+                <Property Type="Visual" Name="Elasticity"><![CDATA[value:0.4]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinWidth"><![CDATA[value:50]]></Property>
+                <Property Type="Container" Name="MinHeight"><![CDATA[value:50]]></Property>
+                <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+                <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:349]]></Property>
+                <Property Type="Visual" Name="InitialWidth"><![CDATA[value:349]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:118]]></Property>
+                <Property Type="Visual" Name="InitialHeight"><![CDATA[value:118]]></Property>
+              </Properties>
+              <Asset Name="White line separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+                <Properties>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:117]]></Property>
+                  <Property Type="Visual" Name="BorderColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:206]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:413]]></Property>
+                  <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9FFFFFF]]></Property>
+                  <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Text for &lt;Forecast Day&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:101]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+                  <Property Type="Domain" Name="Text">
+                    <ConvertedValue ConverterName="value:dateOutput" ConverterInstance="mashup://converters/DateBC/">
+                      <Parameter ParamName="language" Value="value:en-US" />
+                      <Parameter ParamName="format" Value="value:dddd" />
+                      <Parameter ParamName="input" Value="current://DomainComponent/date" />
+                    </ConvertedValue>
+                  </Property>
+                  <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:70]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:30]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Text for &lt;Forecast Date&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:101]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+                  <Property Type="Domain" Name="Text">
+                    <ConvertedValue ConverterName="value:dateOutput" ConverterInstance="mashup://converters/DateBC/">
+                      <Parameter ParamName="format" Value="value:ll" />
+                      <Parameter ParamName="language" Value="value:en-US" />
+                      <Parameter ParamName="input" Value="current://DomainComponent/date" />
+                    </ConvertedValue>
+                  </Property>
+                  <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:12]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:70]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Weather Icon 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Uri="player://data/DefaultAssets/DefaultImage.png">
+                <Properties>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Visual" Name="TitleRadius"><![CDATA[value:10]]></Property>
+                  <Property Type="Domain" Name="Source">
+                    <ConvertedValue ConverterName="value:codeToIcon" ConverterInstance="mashup://converters/WeatherIconBC/">
+                      <Parameter ParamName="input" Value="current://DomainComponent/hourly/[1]/weatherCode" />
+                      <Parameter ParamName="iconPackage" Value="value:Color" />
+                    </ConvertedValue>
+                  </Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:78]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:75]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:52]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Text for &lt;Max temperature Fahrenheit&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF666666]]></Property>
+                  <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:124]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:72]]></Property>
+                  <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/maxtempF]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:297]]></Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:54]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:56]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="°F" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <Properties>
+                  <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:22]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:°F]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:46.920000000000009]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:25]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:41]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:371]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Text for &lt;Celsius Temperature&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:25]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                  <Property Type="Domain" Name="Text">
+                    <ConvertedValue ConverterName="value:concatenate" ConverterInstance="mashup://converters/TextManipulationBC/">
+                      <Parameter ParamName="position" Value="value:after" />
+                      <Parameter ParamName="input" Value="current://DomainComponent/maxtempC" />
+                      <Parameter ParamName="text" Value="value:°C" />
+                    </ConvertedValue>
+                  </Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                  <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:46]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:74]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:371]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Text for &lt;Weather descriptions&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:100]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:117]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9343333]]></Property>
+                  <Property Type="Visual" Name="Underline"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:78]]></Property>
+                  <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/hourly/[1]/weatherDesc/[1]/value]]></Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:104]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                  <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+                  <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+                </Properties>
+              </Asset>
+            </Collection>
+          </Master>
+        </DataSourceProvider>
+      </Collection>
+      <Asset Name="Handle indicator bottom 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Tapped">
+            <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Local%20Weather/" Type="Container" Name="EnableHitTestVisible" Delay="value:0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Domain" Name="Source"><![CDATA[player://resources/2354050c-1f04-49f7-8af4-70413953e9a9]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:54]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:54]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:663]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Local Weather" DescriptorPath="player://data/InterfaceAssets/Weather/Weather.ifd" ExternalAssetName="GetLocalWeather">
+      <Properties>
+        <Property Type="Domain" Name="tp"><![CDATA[value:24]]></Property>
+        <Property Type="Domain" Name="num_of_days"><![CDATA[value:5]]></Property>
+      </Properties>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Weather/DefaultWeatherV2.dax" Length="29048" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/DefaultWeatherV2.png" Length="3582" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/icon_weather_32.png" Length="2704" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Weather.ifd" Length="18365" LastModificationDate="2015-08-06T10:38:50Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/DefaultAssets/DefaultImage.png" Length="64259" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="2354050c-1f04-49f7-8af4-70413953e9a9" Type="uri" Length="381" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/handle_released_1.png">
+      <Alternate Value="player://data/Generated/812fc2fee1dce25e071fc15e4c82da79.png" Width="108" Height="108" Length="469" LastModificationDate="2015-08-10T13:45:18.9325223Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupExternalConverters>
+    <ExternalAsset Name="WeatherIconBC" DescriptorPath="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd" ExternalAssetName="WeatherIconBC">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd" Length="2403" LastModificationDate="2015-04-16T13:44:51.0851542Z" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.js" Length="624" LastModificationDate="2015-04-16T13:44:54.8633703Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/icon_weather_32.png" Length="340" LastModificationDate="2015-04-16T13:44:55.5454093Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/icon_weather_32.png" Length="340" LastModificationDate="2015-04-16T13:44:55.5454093Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd" Length="2403" LastModificationDate="2015-04-16T13:44:51.0851542Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalConverters>
+  <MashupExternalConverters>
+    <ExternalAsset Name="TextManipulationBC" DescriptorPath="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd" ExternalAssetName="TextManipulationBC">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd" Length="8489" LastModificationDate="2015-08-06T10:38:50Z" />
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.js" Length="6180" LastModificationDate="2015-06-30T08:18:34Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/icon_text_manipulation_32.png" Length="249" LastModificationDate="2015-06-24T13:46:24Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/icon_text_manipulation_32.png" Length="249" LastModificationDate="2015-06-24T13:46:24Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd" Length="8489" LastModificationDate="2015-08-06T10:38:50Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalConverters>
+  <MashupResource>
+    <Resource Key="434e8d54-6e0a-4297-9ac2-5194d7267fde" Type="uri" Length="1830" LastModificationDate="2015-04-16T13:44:51.4151731Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Drop-icon.png">
+      <Alternate Value="player://data/Generated/9a4c0bf7e95c087f0e578baecc2747c6.png" Width="50" Height="75" Length="1174" LastModificationDate="2015-08-12T14:01:08.6844581Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="271864f1-55dc-407e-8715-66470387ade4" Type="uri" Length="1655" LastModificationDate="2015-04-16T13:44:51.7511923Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Wind-Icon.png">
+      <Alternate Value="player://data/Generated/34d11815d3591f57a703b018ccec266d.png" Width="28" Height="28" Length="514" LastModificationDate="2015-08-13T10:12:16.4025054Z" Archive="SmallFiles.zip" />
+    </Resource>
+  </MashupResource>
+  <MashupExternalConverters>
+    <ExternalAsset Name="DateBC" DescriptorPath="player://data/InterfaceAssets/DateBC/DateBC.ifd" ExternalAssetName="DateBC">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.ifd" Length="6147" LastModificationDate="2015-08-11T13:04:22Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/moment-with-langs.js" Length="291412" LastModificationDate="2015-06-24T13:46:28Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/moment-timezone-with-data.js" Length="187569" LastModificationDate="2015-06-24T13:46:28Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.js" Length="2668" LastModificationDate="2015-08-11T09:14:04Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.ifd" Length="6147" LastModificationDate="2015-08-11T13:04:22Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.ifd" Length="6147" LastModificationDate="2015-08-11T13:04:22Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.ifd" Length="6147" LastModificationDate="2015-08-11T13:04:22Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.ifd" Length="6147" LastModificationDate="2015-08-11T13:04:22Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2015-06-24T13:46:28Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalConverters>
+</Mashup>

@@ -1,0 +1,2546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="heavent-wayfinding" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-087deee0-c997-461e-ae82-a561b98a3435" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="24" MinApiNumber="23" LastModificationDate="2018-03-02T14:59:25.076669Z" SnapshotPath="player://data/Snapshots/default.png">
+  <ComposerExtensions>
+    <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
+    <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+    <Extension Name="IsExpandedInBindingViews" Value="True" />
+  </ComposerExtensions>
+  <Properties>
+    <Property Type="Visual" Name="LoadingIndicatorStyle"><![CDATA[value:UniversalLoading]]></Property>
+    <Property Type="Visual" Name="NavigateWithKeyboardEnabled"><![CDATA[value:True]]></Property>
+  </Properties>
+  <Layers />
+  <Spaces>
+    <Space Name="Scene 1" AutoReset="true" BackgroundColor="#FFFFFFFF">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="f1e5a7b5-2fc7-4690-b549-55465c90ee83" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+        <Extension Name="GuideLines" Value="">
+          <ComplexAttributes>
+            <Attribute Key="AreVisible" Value="True" />
+            <Attribute Key="GuideLinesColor" Value="#FFD74AE6" />
+            <Attribute Key="VerticalLines" Value="" />
+            <Attribute Key="HorizontalLines" Value="" />
+          </ComplexAttributes>
+        </Extension>
+        <Extension Name="ViewPortXOnScene" Value="2835.4958677686" />
+        <Extension Name="ViewPortYOnScene" Value="4358.05785123967" />
+        <Extension Name="TranslateYOnScene" Value="-718.694346002452" />
+        <Extension Name="TranslateXOnScene" Value="-802.957853037063" />
+      </ComposerExtensions>
+      <Properties>
+        <Property Type="Visual" Name="UseExperienceKeyboardStyle"><![CDATA[value:False]]></Property>
+      </Properties>
+      <Layer Name="Layer 1" Visual="Pinboard" LayerType="Default">
+        <ComposerExtensions>
+          <Extension Name="IsExpanded" Value="True" />
+          <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+          <Extension Name="IsExpandedInBindingViews" Value="True" />
+        </ComposerExtensions>
+        <Attachments>
+          <EventTrigger EventType="Container" EventName="ItemDropped">
+            <CreateAsset Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="ItemShadow"><![CDATA[value:NoShadow]]></Property>
+        </Properties>
+        <Collection Name="BG" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1920]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="bg 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <ComposerExtensions>
+              <Extension Name="IsLocked" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/ed3832e1-7d80-4353-8cf4-e3074d94596a]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 3" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF292929]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:256]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:1003]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:491]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:133]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 2" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF292929]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:255]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:82]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:492]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:143]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 4" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF292929]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:255]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:546]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:492]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:765]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle 5" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF494949]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:256]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:1006]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:471]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:87]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="search2" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/9e1dca89-ac09-420f-859d-fe10836530c2]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:71]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:1009]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:52]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:52]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Scroll" Visual="ScrollableGroupCollection" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="BackgroundFilterOnMaximize"><![CDATA[value:None]]></Property>
+            <Property Type="Visual" Name="ExtendedWidth"><![CDATA[value:1805]]></Property>
+            <Property Type="Visual" Name="ExtendedHeight"><![CDATA[value:1141.4974]]></Property>
+            <Property Type="Visual" Name="OriginPointX"><![CDATA[value:78.500000000000057]]></Property>
+            <Property Type="Visual" Name="ScrollViewerHorizontalOffset"><![CDATA[value:13.73]]></Property>
+            <Property Type="Visual" Name="OriginPointY"><![CDATA[value:82.499999999999972]]></Property>
+            <Property Type="Visual" Name="ScrollViewerVerticalOffset"><![CDATA[value:100]]></Property>
+            <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1211]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:1398]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1059]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Collection Name="Group" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="True" />
+              <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+              <Extension Name="IsExpandedInBindingViews" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Container" Name="X"><![CDATA[value:824]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:488]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1805]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1805]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:1141]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:1141]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Asset Name="eegeo_indoor_maps" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/20142e22-87f2-473d-b3c3-7767e7d870fd]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:764]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:528]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:2243]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:1611]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image button 2" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+              <ComposerExtensions>
+                <Extension Name="IsLocked" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Segoe UI</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:1228]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:500]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:125]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:220]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image button 3" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+              <ComposerExtensions>
+                <Extension Name="IsLocked" Value="True" />
+              </ComposerExtensions>
+              <Attachments>
+                <EventTrigger EventType="Visual" EventName="Released">
+                  <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/" Type="Visual" Name="ScrollTo" Delay="value:0">
+                    <ServiceValueParameter ParamName="eUnit" Value="value:Percentage" />
+                    <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                    <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                    <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                    <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                    <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                    <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                    <ServiceValueParameter ParamName="dX" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%203/ContainerInterface/X" />
+                    <ServiceValueParameter ParamName="dY" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%203/ContainerInterface/Y" />
+                  </InvokeService>
+                </EventTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Segoe UI</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:287]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:234]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:125]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:220]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image button 1" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+              <ComposerExtensions>
+                <Extension Name="IsLocked" Value="True" />
+              </ComposerExtensions>
+              <Attachments>
+                <EventTrigger EventType="Visual" EventName="Released">
+                  <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/" Type="Visual" Name="ScrollTo" Delay="value:0">
+                    <ServiceValueParameter ParamName="eUnit" Value="value:Percentage" />
+                    <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                    <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                    <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                    <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                    <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                    <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                    <ServiceValueParameter ParamName="dX" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%201/ContainerInterface/X" />
+                    <ServiceValueParameter ParamName="dY" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%201/ContainerInterface/Y" />
+                  </InvokeService>
+                </EventTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Segoe UI</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:1020]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:781]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:125]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:220]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image button 4" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+              <ComposerExtensions>
+                <Extension Name="IsLocked" Value="True" />
+              </ComposerExtensions>
+              <Attachments>
+                <EventTrigger EventType="Visual" EventName="Released">
+                  <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/" Type="Visual" Name="ScrollTo" Delay="value:0">
+                    <ServiceValueParameter ParamName="eUnit" Value="value:Percentage" />
+                    <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                    <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                    <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                    <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                    <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                    <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                    <ServiceValueParameter ParamName="dX" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%204/ContainerInterface/X" />
+                    <ServiceValueParameter ParamName="dY" Value="player://visuals/heavent-wayfinding/Scene%201/Layer%201/Scroll/Group/Image%20button%204/ContainerInterface/Y" />
+                  </InvokeService>
+                </EventTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Segoe UI</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e6e800fe-2724-43ea-b5b6-c3a4a4445193]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:540]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:811]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:125]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:220]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Collection Name="Template for data feed" Visual="Group" Container="Default" ContainerStyle="">
+              <ComposerExtensions>
+                <Extension Name="IsExpanded" Value="True" />
+                <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+                <Extension Name="IsExpandedInBindingViews" Value="True" />
+                <Extension Name="IsLocked" Value="False" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Container" Name="X"><![CDATA[value:902]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:570]]></Property>
+                <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1805]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:1805]]></Property>
+                <Property Type="Visual" Name="InitialHeight"><![CDATA[value:1141]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:1141]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+              </Properties>
+              <DataSourceProvider>
+                <DataSource>
+                  <Contract Uri="player://externals/BDD/Rows" />
+                </DataSource>
+                <Master>
+                  <Asset Name="Image button" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+                    <Attachments>
+                      <EventTrigger EventType="Visual" EventName="Released">
+                        <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/" Type="Container" Name="Show" Delay="value:0">
+                          <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                          <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                          <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                          <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                          <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                          <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                          <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                          <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                        </InvokeService>
+                        <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Image/" Type="Domain" Name="ChangeContent" Delay="value:0">
+                          <ServiceValueParameter ParamName="refContent" Value="current://DomainComponent/Logo" />
+                        </InvokeService>
+                        <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Title/" Type="Domain" Name="SetText" Delay="value:0">
+                          <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Nom Exposant" />
+                        </InvokeService>
+                        <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Description/" Type="Domain" Name="SetText" Delay="value:0">
+                          <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Description" />
+                        </InvokeService>
+                        <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/emplace/" Type="Domain" Name="SetText" Delay="value:0">
+                          <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Emplacement" />
+                        </InvokeService>
+                      </EventTrigger>
+                    </Attachments>
+                    <Properties>
+                      <Property Type="Visual" Name="Font">
+                        <Typeface>
+                          <Family>Segoe UI</Family>
+                          <Stretch>normal</Stretch>
+                          <Weight>400</Weight>
+                          <Style>normal</Style>
+                        </Typeface>
+                      </Property>
+                      <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                      <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                      <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                      <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                      <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                      <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                      <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                      <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                      <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                      <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                      <Property Type="Visual" Name="ReleasedImage"><![CDATA[current://DomainComponent/PlaceHolder]]></Property>
+                      <Property Type="Visual" Name="PressedImage"><![CDATA[current://DomainComponent/PlaceHolder]]></Property>
+                      <Property Type="Container" Name="X"><![CDATA[current://DomainComponent/X]]></Property>
+                      <Property Type="Container" Name="Y"><![CDATA[current://DomainComponent/Y]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[value:125]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[value:158]]></Property>
+                      <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                    </Properties>
+                  </Asset>
+                </Master>
+              </DataSourceProvider>
+            </Collection>
+          </Collection>
+        </Collection>
+        <Collection Name="LOGO" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1780]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:194]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:194]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:160]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:160]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="logoheavent 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/9807b4d0-72f8-416d-886b-d4797dbb9ae2]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:97]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:194]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:160]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="POPUPINFO" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1086]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:566]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:669]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:669]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:740]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:740]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="popupinfo 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b71aeba0-c65b-4ed0-a99e-61709270baa5]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:334]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:370]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:669]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:740]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="BOUTTON_TRANSPARENT 1" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="Released">
+                <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/" Type="Container" Name="Hide" Delay="value:0">
+                  <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                </InvokeService>
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FAFAFA]]></Property>
+              <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#00000000]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#002C2C2C]]></Property>
+              <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:56]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:51]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:55]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:57]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Collection Name="Group 1" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="True" />
+              <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+              <Extension Name="IsExpandedInBindingViews" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Container" Name="X"><![CDATA[value:300]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:363]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:479]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:479]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:605]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:605]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Collection Name="Template for data feed 1" Visual="Group" Container="Default" ContainerStyle="">
+              <ComposerExtensions>
+                <Extension Name="IsExpanded" Value="False" />
+                <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+                <Extension Name="IsExpandedInBindingViews" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Container" Name="X"><![CDATA[value:239]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:303]]></Property>
+                <Property Type="Visual" Name="InitialWidth"><![CDATA[value:478]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:478]]></Property>
+                <Property Type="Visual" Name="InitialHeight"><![CDATA[value:604]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:604]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+              <Asset Name="Image" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://data/DefaultAssets/DefaultImage.png]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fit]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:61]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:52]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:110]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:94]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Title" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                <Properties>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:Title]]></Property>
+                  <Property Type="Visual" Name="Font">
+                    <Typeface>
+                      <Family>Gotham</Family>
+                      <Stretch>normal</Stretch>
+                      <Weight>300</Weight>
+                      <Style>normal</Style>
+                    </Typeface>
+                  </Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:32]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                  <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:304]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:52]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:347]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:94]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="Description" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                <Properties>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:Description]]></Property>
+                  <Property Type="Visual" Name="Font">
+                    <Typeface>
+                      <Family>Gotham</Family>
+                      <Stretch>semicondensed</Stretch>
+                      <Weight>400</Weight>
+                      <Style>normal</Style>
+                    </Typeface>
+                  </Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:239]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:474]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:478]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:259]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="EMPLACEMENT" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                <Properties>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:EMPLACEMENT]]></Property>
+                  <Property Type="Visual" Name="Font">
+                    <Typeface>
+                      <Family>Gotham</Family>
+                      <Stretch>semicondensed</Stretch>
+                      <Weight>400</Weight>
+                      <Style>normal</Style>
+                    </Typeface>
+                  </Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFD3897]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:239]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:160]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:478]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:46]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="INFORMATIONS" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                <Properties>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:INFORMATIONS]]></Property>
+                  <Property Type="Visual" Name="Font">
+                    <Typeface>
+                      <Family>Gotham</Family>
+                      <Stretch>semicondensed</Stretch>
+                      <Weight>400</Weight>
+                      <Style>normal</Style>
+                    </Typeface>
+                  </Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFD3897]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+                  <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:239]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:320]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:478]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:32]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="emplace" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                <ComposerExtensions>
+                  <Extension Name="HasBeenRenamed" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Domain" Name="Text"><![CDATA[value:Description]]></Property>
+                  <Property Type="Visual" Name="Font">
+                    <Typeface>
+                      <Family>Gotham</Family>
+                      <Stretch>semicondensed</Stretch>
+                      <Weight>400</Weight>
+                      <Style>normal</Style>
+                    </Typeface>
+                  </Property>
+                  <Property Type="Visual" Name="FontSize"><![CDATA[value:20]]></Property>
+                  <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                  <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:239]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:221]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:478]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:89]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+            </Collection>
+          </Collection>
+        </Collection>
+        <Collection Name="BUTTON CONFE" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1712]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:1000]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:383]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:383]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:128]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:128]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="speech" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/a4425bf8-67e0-4392-a5b4-708e39302d93]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:192]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:64]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:383]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:128]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="BOUTTON_TRANSPARENT" Visual="Button" Style="Simple button" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+            <Attachments>
+              <EventTrigger EventType="Visual" EventName="Released">
+                <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/SLIDE/" Type="Container" Name="MoveRotateResize" Delay="value:0">
+                  <ServiceValueParameter ParamName="dX" Value="value:960" />
+                  <ServiceValueParameter ParamName="dY" Value="value:600" />
+                  <ServiceValueParameter ParamName="dAngle" Value="value:0" />
+                  <ServiceValueParameter ParamName="dWidth" Value="value:1671" />
+                  <ServiceValueParameter ParamName="dHeight" Value="value:961" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:1" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseOut" />
+                </InvokeService>
+                <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/Rectangle%208/" Type="Container" Name="Show" Delay="value:0">
+                  <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                  <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                  <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                  <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                  <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                  <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                  <ServiceValueParameter ParamName="dDuration" Value="value:0.79999999999999993" />
+                  <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseOut" />
+                </InvokeService>
+              </EventTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Segoe UI</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>400</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FAFAFA]]></Property>
+              <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#00000000]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#002C2C2C]]></Property>
+              <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:192]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:64]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:383]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:128]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Asset Name="SEARCH" Visual="Text input" Style="" Container="Static" ContainerStyle="" Domain="value:Text input">
+          <Attachments>
+            <EventTrigger EventType="Visual" EventName="EnterKeyPressed">
+              <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/SEARCH/" Type="Visual" Name="StopEdition" Delay="value:0.0" />
+            </EventTrigger>
+            <EventTrigger EventType="Domain" EventName="TextChanged">
+              <InvokeService Target="player://externals/BDD/" Type="Domain" Name="AddFilter" Delay="value:0">
+                <ServiceValueParameter ParamName="Reset" Value="value:True" />
+                <ServiceValueParameter ParamName="Property" Value="value:Nom Exposant" />
+                <ServiceArgumentParameter ParamName="Value" ArgumentName="SecondParam" />
+                <ServiceValueParameter ParamName="Filter" Value="value:ContainsIgnoreCase" />
+              </InvokeService>
+            </EventTrigger>
+          </Attachments>
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Gotham</Family>
+                <Stretch>normal</Stretch>
+                <Weight>300</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="InstructionFont">
+              <Typeface>
+                <Family>Gotham</Family>
+                <Stretch>normal</Stretch>
+                <Weight>300</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="InstructionFontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Keyboard"><![CDATA[value:UNDEFINED]]></Property>
+            <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00BBBBBB]]></Property>
+            <Property Type="Visual" Name="EditionBackgroundColor"><![CDATA[value:#00CFCFCF]]></Property>
+            <Property Type="Visual" Name="InstructionFontColor"><![CDATA[value:#FF9F9F9F]]></Property>
+            <Property Type="Visual" Name="InstructionItalic"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00C6C7C8]]></Property>
+            <Property Type="Visual" Name="EditionBorderColor"><![CDATA[value:#08C6C7C8]]></Property>
+            <Property Type="Visual" Name="EditionBorderThickness"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="SelectionAreaColor"><![CDATA[value:#00FFFFFF]]></Property>
+            <Property Type="Visual" Name="InstructionText"><![CDATA[value:Rechercher...]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:308]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:1007]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:338]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Collection Name="UP" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:252]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:79]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:450]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:450]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:116]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:116]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="Text for &lt;Date&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text">
+                <ConvertedValue ConverterName="value:toUpperCase" ConverterInstance="player://converters/TextManipulationBC/">
+                  <ServiceValueParameter ParamName="input" Value="player://externals/Clock/date" />
+                  <ServiceValueParameter ParamName="applyTo" Value="value:firstLetter" />
+                </ConvertedValue>
+              </Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Gotham</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>300</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:123]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:37]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:246]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:73]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text for &lt;Time&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[player://externals/Clock/time]]></Property>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Gotham</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>300</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:23]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:131]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:89]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:32]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Collection Name="CurrentWeather" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="False" />
+              <Extension Name="HasBeenRenamed" Value="True" />
+              <Extension Name="IsExpandedInBindingViews" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+              <Property Type="Visual" Name="ItemHeight"><![CDATA[value:300]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="IsVisible">
+                <ConvertedValue ConverterName="value:Not">
+                  <ServiceValueParameter ParamName="input" Value="player://externals/Local%20Weather/Result/info/error" />
+                </ConvertedValue>
+              </Property>
+              <Property Type="Container" Name="X"><![CDATA[value:371]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:59]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:157]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:114]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:114]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Asset Name="Weather Icon" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Uri="player://data/DefaultAssets/DefaultImage.png">
+              <Properties>
+                <Property Type="Visual" Name="TitleRadius"><![CDATA[value:10]]></Property>
+                <Property Type="Domain" Name="Source">
+                  <ConvertedValue ConverterName="value:codeToIcon" ConverterInstance="player://converters/WeatherIconBC/">
+                    <ServiceValueParameter ParamName="iconPackage" Value="value:Color" />
+                    <ServiceValueParameter ParamName="input" Value="player://externals/Local%20Weather/Result/data/current_condition/[1]/weatherCode" />
+                  </ConvertedValue>
+                </Property>
+                <Property Type="Container" Name="X"><![CDATA[value:41]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:42]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:67.5]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:67.389162561576356]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text for &lt;Current Weather descriptions&gt;" Visual="DefaultText" Style="" Container="No resize" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9FFFFFF]]></Property>
+                <Property Type="Visual" Name="Italic"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:8]]></Property>
+                <Property Type="Domain" Name="Text"><![CDATA[player://externals/Local%20Weather/Result/data/current_condition/[1]/weatherDesc/[1]/value]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Gotham</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>300</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:41]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:92]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:68]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text for &lt;Current Temperature Fahrenheit&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Domain" Name="Text"><![CDATA[player://externals/Local%20Weather/Result/data/current_condition/[1]/temp_F]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Verdana</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:12]]></Property>
+                <Property Type="Container" Name="Opacity"><![CDATA[value:0.54]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:46]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:43]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:23]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="°F 1" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="Text"><![CDATA[value:°F]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#D9FFFFFF]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Verdana</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:5]]></Property>
+                <Property Type="Container" Name="Opacity"><![CDATA[value:0.65]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:147]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:47]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:12]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:11]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text for &lt;Current Temperature Celsius&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+                <Property Type="Domain" Name="Text">
+                  <ConvertedValue ConverterName="value:concatenate" ConverterInstance="player://converters/TextManipulationBC/">
+                    <ServiceValueParameter ParamName="position" Value="value:after" />
+                    <ServiceValueParameter ParamName="text" Value="value:°C" />
+                    <ServiceValueParameter ParamName="input" Value="player://externals/Local%20Weather/Result/data/current_condition/[1]/temp_C" />
+                  </ConvertedValue>
+                </Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Verdana</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Container" Name="X"><![CDATA[value:121]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:22]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:54]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:37]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Drop Icon Big" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/434e8d54-6e0a-4297-9ac2-5194d7267fde]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:102]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:68]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:8.4375]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:10.108374384236452]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Drop Icon Small" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/434e8d54-6e0a-4297-9ac2-5194d7267fde]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:109]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:70]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:3.375]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:4.4926108374384235]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text for &lt;Current Humidity&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:15]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:False]]></Property>
+                <Property Type="Domain" Name="Text">
+                  <ConvertedValue ConverterName="value:concatenate" ConverterInstance="player://converters/TextManipulationBC/">
+                    <ServiceValueParameter ParamName="position" Value="value:after" />
+                    <ServiceValueParameter ParamName="text" Value="value:%" />
+                    <ServiceValueParameter ParamName="input" Value="player://externals/Local%20Weather/Result/data/current_condition/[1]/humidity" />
+                  </ConvertedValue>
+                </Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Verdana</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:133]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:69]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:33.75]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:12.916256157635468]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Wind Icon" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/271864f1-55dc-407e-8715-66470387ade4]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:117]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:92]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:15.75]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:15.724137931034482]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text for &lt;Current Wind speed kmh&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:6]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="Text">
+                  <ConvertedValue ConverterName="value:concatenate" ConverterInstance="player://converters/TextManipulationBC/">
+                    <ServiceValueParameter ParamName="position" Value="value:after" />
+                    <ServiceValueParameter ParamName="text" Value="value: km/h" />
+                    <ServiceValueParameter ParamName="input" Value="player://externals/Local%20Weather/Result/data/current_condition/[1]/windspeedKmph" />
+                  </ConvertedValue>
+                </Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Verdana</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:91]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:45]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:12.916256157635468]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Gray line separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+              <Properties>
+                <Property Type="Visual" Name="BorderColor"><![CDATA[value:#D9343333]]></Property>
+                <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:113.4384236453202]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:0.56157635467980294]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:44.5]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+        </Collection>
+        <Asset Name="LES EXPOSANTS" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:LES EXPOSANTS]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Segoe UI</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFD3897]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:252]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:210]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:450]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Collection Name="BDD" Visual="AssetGrid" Style="" Container="Static" ContainerStyle="">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FillDirection"><![CDATA[value:TopToBottom]]></Property>
+            <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Axis"><![CDATA[value:Vertical]]></Property>
+            <Property Type="Visual" Name="Columns"><![CDATA[value:1]]></Property>
+            <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:461]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:70]]></Property>
+            <Property Type="Visual" Name="CenterJustify"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:253]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:580]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:464]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:643]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <DataSourceProvider>
+            <DataSource>
+              <Contract Uri="player://externals/BDD/Rows" />
+            </DataSource>
+            <Master>
+              <Collection Name="Template for items of Rows" Visual="Group" Style="" Container="Default" ContainerStyle="DefaultStyle">
+                <ComposerExtensions>
+                  <Extension Name="IsExpanded" Value="True" />
+                  <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+                  <Extension Name="IsExpandedInBindingViews" Value="True" />
+                </ComposerExtensions>
+                <Properties>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+                  <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+                  <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+                  <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+                  <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
+                  <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+                  <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                  <Property Type="Visual" Name="InitialWidth"><![CDATA[value:461]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:461]]></Property>
+                  <Property Type="Visual" Name="InitialHeight"><![CDATA[value:70]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+                </Properties>
+                <Asset Name="Rectangle" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+                  <Properties>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+                    <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                    <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFD3897]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT ==&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:40.650753569089474]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:36]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:82.430694737320323]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:73]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Rectangle 6" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+                  <Properties>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+                    <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                    <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF363535]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:230]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:37]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:461]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:62]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT !=&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Ellipse" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+                  <Properties>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+                    <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+                    <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFD3897]]></Property>
+                    <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                    <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:40.650753569089474]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:16.937813987120613]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:15]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT !=&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Rectangle 1" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+                  <Properties>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+                    <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+                    <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                    <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF464646]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT ==&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:277]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:33]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:367]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:3]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Letter" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                  <ComposerExtensions>
+                    <Extension Name="HasBeenRenamed" Value="True" />
+                  </ComposerExtensions>
+                  <Properties>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/Nom Exposant]]></Property>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Gotham</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>300</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                    <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT ==&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                    <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:40.650753569089474]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:82.430694737320323]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="Nom Exposant 1" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+                  <Properties>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/Nom Exposant]]></Property>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Gotham</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>300</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                    <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="IsVisible">
+                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Description" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if(INPUT !=&quot;Letter&quot;)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                      </ConvertedValue>
+                    </Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:266]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:389]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:66]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="triangleselect" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                  <Properties>
+                    <Property Type="Domain" Name="Source"><![CDATA[player://resources/0e35265b-b325-49de-97c3-8a2188543443]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:427]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:38]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:36]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:43]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[current://view/RootVisual/TOGGLE%20TRANSPARENT/DomainComponent/IsChecked]]></Property>
+                  </Properties>
+                </Asset>
+                <Asset Name="TOGGLE TRANSPARENT" Visual="ToggleButton" Style="Simple Toggle Button" Container="Default" ContainerStyle="" Domain="value:ToggleButton">
+                  <Attachments>
+                    <EventTrigger EventType="Domain" EventName="Checked">
+                      <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/" Type="Container" Name="Show" Delay="value:0">
+                        <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
+                        <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                        <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                        <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                        <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                        <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                        <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                        <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                      </InvokeService>
+                      <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Image/" Type="Domain" Name="ChangeContent" Delay="value:0">
+                        <ServiceValueParameter ParamName="refContent" Value="current://DomainComponent/Logo" />
+                      </InvokeService>
+                      <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Title/" Type="Domain" Name="SetText" Delay="value:0">
+                        <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Nom Exposant" />
+                      </InvokeService>
+                      <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/Description/" Type="Domain" Name="SetText" Delay="value:0">
+                        <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Description" />
+                      </InvokeService>
+                      <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/POPUPINFO/Group%201/Template%20for%20data%20feed%201/emplace/" Type="Domain" Name="SetText" Delay="value:0">
+                        <ServiceValueParameter ParamName="value" Value="current://DomainComponent/Emplacement" />
+                      </InvokeService>
+                    </EventTrigger>
+                  </Attachments>
+                  <Properties>
+                    <Property Type="Visual" Name="Font">
+                      <Typeface>
+                        <Family>Segoe UI</Family>
+                        <Stretch>normal</Stretch>
+                        <Weight>400</Weight>
+                        <Style>normal</Style>
+                      </Typeface>
+                    </Property>
+                    <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                    <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                    <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+                    <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#002C2C2C]]></Property>
+                    <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FAFAFA]]></Property>
+                    <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                    <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#00000000]]></Property>
+                    <Property Type="Visual" Name="CheckedVeilColor"><![CDATA[value:#0083D3F6]]></Property>
+                    <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                    <Property Type="Domain" Name="IsChecked"><![CDATA[value:True]]></Property>
+                    <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:230]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:462]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                    <Property Type="Domain" Name="IsExclusive"><![CDATA[value:True]]></Property>
+                    <Property Type="Domain" Name="LogicGroupName"><![CDATA[value:BDD]]></Property>
+                  </Properties>
+                </Asset>
+              </Collection>
+            </Master>
+          </DataSourceProvider>
+        </Collection>
+        <Collection Name="SLIDE SPEECh" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+            <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="IsLocked" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1920]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Asset Name="Rectangle 8" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="Opacity"><![CDATA[value:0.73]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            </Properties>
+          </Asset>
+          <Collection Name="SLIDE" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="False" />
+              <Extension Name="HasBeenRenamed" Value="True" />
+              <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
+              <Extension Name="IsExpandedInBindingViews" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:1588]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1671]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:1671]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:961]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:961]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Asset Name="Rectangle 7" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+              <Properties>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+                <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+                <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+                <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:836]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:480]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:1671]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:961]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="LES CONFÉRENCES" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+              <Properties>
+                <Property Type="Domain" Name="Text"><![CDATA[value:LES CONFÉRENCES]]></Property>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Gotham</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>300</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:39]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF262626]]></Property>
+                <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:836]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:70]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:450]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="CLOSE" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+              <ComposerExtensions>
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Attachments>
+                <EventTrigger EventType="Visual" EventName="Released">
+                  <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/SLIDE/" Type="Container" Name="MoveRotateResize" Delay="value:0">
+                    <ServiceValueParameter ParamName="dX" Value="value:960" />
+                    <ServiceValueParameter ParamName="dY" Value="value:1588" />
+                    <ServiceValueParameter ParamName="dAngle" Value="value:0" />
+                    <ServiceValueParameter ParamName="dWidth" Value="value:1671" />
+                    <ServiceValueParameter ParamName="dHeight" Value="value:961" />
+                    <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                    <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                    <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                    <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                    <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                    <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/Rectangle%208/" Type="Container" Name="Hide" Delay="value:0">
+                    <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
+                    <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+                    <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+                    <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+                    <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+                    <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+                    <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+                    <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+                  </InvokeService>
+                </EventTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Segoe UI</Family>
+                    <Stretch>normal</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFAFAFA]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:5]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF000000]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/a9153f65-3a32-4282-b711-32eee5d96373]]></Property>
+                <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/a9153f65-3a32-4282-b711-32eee5d96373]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:1628]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:40]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:71]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:60]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="MECREDI 28" Visual="ToggleButton" Style="Simple Toggle Button" Container="Default" ContainerStyle="" Domain="value:ToggleButton">
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Gotham</Family>
+                    <Stretch>semicondensed</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:32]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:MECREDI 28]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FD3897]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFD3897]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="CheckedVeilColor"><![CDATA[value:#FF1A2C5F]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="IsChecked"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:632]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:375]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:96]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Domain" Name="IsExclusive"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="LogicGroupName"><![CDATA[value:TOGGLE SPEECH]]></Property>
+                <Property Type="Domain" Name="AllowToUncheck"><![CDATA[value:True]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="JEUDI 29" Visual="ToggleButton" Style="Simple Toggle Button" Container="Default" ContainerStyle="" Domain="value:ToggleButton">
+              <Properties>
+                <Property Type="Visual" Name="Font">
+                  <Typeface>
+                    <Family>Gotham</Family>
+                    <Stretch>semicondensed</Stretch>
+                    <Weight>400</Weight>
+                    <Style>normal</Style>
+                  </Typeface>
+                </Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:39]]></Property>
+                <Property Type="Visual" Name="Text"><![CDATA[value:JEUDI 29]]></Property>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FD3897]]></Property>
+                <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFD3897]]></Property>
+                <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+                <Property Type="Visual" Name="PressedVeilColor"><![CDATA[value:#7F000000]]></Property>
+                <Property Type="Visual" Name="CheckedVeilColor"><![CDATA[value:#FF1A2C5F]]></Property>
+                <Property Type="Visual" Name="LineWrap"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Shadow"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="Bold"><![CDATA[value:True]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:1038]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:375]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:96]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Domain" Name="IsExclusive"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="LogicGroupName"><![CDATA[value:TOGGLE SPEECH]]></Property>
+                <Property Type="Domain" Name="AllowToUncheck"><![CDATA[value:True]]></Property>
+                <Property Type="Domain" Name="IsChecked"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Collection Name="MERCREDI" Visual="ScrollableGroupCollection" Style="" Container="Default" ContainerStyle="">
+              <ComposerExtensions>
+                <Extension Name="IsExpanded" Value="True" />
+                <Extension Name="IsExpandedInBindingViews" Value="True" />
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="ExtendedWidth"><![CDATA[value:1640]]></Property>
+                <Property Type="Visual" Name="ExtendedHeight"><![CDATA[value:1597]]></Property>
+                <Property Type="Visual" Name="OriginPointX"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="ScrollViewerHorizontalOffset"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/SLIDE/MECREDI%2028/DomainComponent/IsChecked]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:836]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:683]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:1640]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:815]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="PanDirection"><![CDATA[value:Vertical]]></Property>
+              </Properties>
+              <Asset Name="slider-1000x323-2018-11(1)" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:821]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:264]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="slider-1000x323-2018-11(1) 1" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:820]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:798]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="slider-1000x323-2018-11(1) 2" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:820]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:1334]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+            </Collection>
+            <Collection Name="JEUDI" Visual="ScrollableGroupCollection" Style="" Container="Default" ContainerStyle="">
+              <ComposerExtensions>
+                <Extension Name="IsExpanded" Value="True" />
+                <Extension Name="HasBeenRenamed" Value="True" />
+              </ComposerExtensions>
+              <Properties>
+                <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+                <Property Type="Visual" Name="ExtendedWidth"><![CDATA[value:1640]]></Property>
+                <Property Type="Visual" Name="ExtendedHeight"><![CDATA[value:1597]]></Property>
+                <Property Type="Visual" Name="OriginPointX"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="ScrollViewerHorizontalOffset"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:836]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:683]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:1640]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:815]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[player://visuals/heavent-wayfinding/Scene%201/Layer%201/SLIDE%20SPEECh/SLIDE/JEUDI%2029/DomainComponent/IsChecked]]></Property>
+                <Property Type="Visual" Name="PanDirection"><![CDATA[value:Vertical]]></Property>
+              </Properties>
+              <Asset Name="slider-1000x323-2018-11(1) 3" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:821]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:264]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="slider-1000x323-2018-11(1) 4" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:820]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:798]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+              <Asset Name="slider-1000x323-2018-11(1) 5" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+                <Properties>
+                  <Property Type="Domain" Name="Source"><![CDATA[player://resources/c6b6602d-31c6-4f01-bde9-7025db69b30a]]></Property>
+                  <Property Type="Container" Name="X"><![CDATA[value:820]]></Property>
+                  <Property Type="Container" Name="Y"><![CDATA[value:1334]]></Property>
+                  <Property Type="Container" Name="Width"><![CDATA[value:1628]]></Property>
+                  <Property Type="Container" Name="Height"><![CDATA[value:526]]></Property>
+                  <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                </Properties>
+              </Asset>
+            </Collection>
+          </Collection>
+        </Collection>
+      </Layer>
+    </Space>
+  </Spaces>
+  <SharedContracts />
+  <Converters>
+    <ExternalAsset Name="WeatherIconBC" DescriptorPath="player://resources/0d039999-97d0-4dbe-92dd-034f0779b611" ExternalAssetName="WeatherIconBC" />
+    <ExternalAsset Name="TextManipulationBC" DescriptorPath="player://resources/8d4ec329-9106-4fa9-8866-b3ceb5374ea6" ExternalAssetName="TextManipulationBC" />
+    <ExternalAsset Name="DateBC" DescriptorPath="player://resources/9ae090b6-ce91-4870-b420-0a7ebdb3faa6" ExternalAssetName="DateBC" />
+    <ExternalAsset Name="Eval" DescriptorPath="player://resources/0f4f5f6b-5d73-42d5-95fe-29970f50b387" ExternalAssetName="EvalBC" />
+  </Converters>
+  <ExternalAssets>
+    <ExternalAsset Name="Local Weather" DescriptorPath="player://resources/adf1a02b-d7fc-4586-a1e5-e0dec650688f" ExternalAssetName="GetLocalWeather">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="f1e5a7b5-2fc7-4690-b549-55465c90ee83" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+      <Properties>
+        <Property Type="Domain" Name="tp"><![CDATA[value:24]]></Property>
+        <Property Type="Domain" Name="num_of_days"><![CDATA[value:5]]></Property>
+        <Property Type="Domain" Name="q"><![CDATA[value:Cannes]]></Property>
+        <Property Type="Domain" Name="lang"><![CDATA[value:fr]]></Property>
+      </Properties>
+    </ExternalAsset>
+    <ExternalAsset Name="Clock" DescriptorPath="player://resources/2558ced5-6c4b-4288-bbb8-c52374c761e4" ExternalAssetName="Clock">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="f1e5a7b5-2fc7-4690-b549-55465c90ee83" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+      <Properties>
+        <Property Type="Domain" Name="language"><![CDATA[value:fr-FR]]></Property>
+      </Properties>
+    </ExternalAsset>
+    <ExternalAsset Name="BDD" DescriptorPath="player://resources/5aaed4e2-2b3c-4212-9744-df678051db3b" ExternalAssetName="BDD">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="f1e5a7b5-2fc7-4690-b549-55465c90ee83" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+    </ExternalAsset>
+  </ExternalAssets>
+  <Resources>
+    <Resource Key="418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Type="style" DefaultValue="value:IntuiFace White Style">
+      <Templates>
+        <AssetTemplate Propagate="true">
+          <Conditions />
+          <Property Type="Container" Name="DisplayButtonsFillColor"><![CDATA[value:#FFFAFAFA]]></Property>
+          <Property Type="Container" Name="DisplayButtonsOutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:20]]></Property>
+          <Property Type="Container" Name="DisplayButtonsFlat"><![CDATA[value:True]]></Property>
+          <Property Type="Container" Name="DisplayButtonsShadow"><![CDATA[value:False]]></Property>
+          <Property Type="Container" Name="DisplayButtonsPressedColor"><![CDATA[value:#33000000]]></Property>
+          <Property Type="Container" Name="DisplayButtonsCheckedColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Container" Name="CloseButtonIcon"><![CDATA[player://resources/addf0ae6-ccfa-4948-90ba-0d840081f3f2]]></Property>
+          <Property Type="Container" Name="MinimizeButtonIcon"><![CDATA[player://resources/03918373-8c3c-4b55-a14a-e31a3e63f2bf]]></Property>
+          <Property Type="Container" Name="MaximizeButtonIcon"><![CDATA[player://resources/82def5c0-afdc-4bbd-b52a-1834a34a9018]]></Property>
+          <Property Type="Container" Name="UnmaximizeButtonIcon"><![CDATA[player://resources/038794a9-ec80-4819-ab0d-d9eba20f47c9]]></Property>
+          <Property Type="Container" Name="PinButtonIcon"><![CDATA[player://resources/f03c1c0e-cbd7-4265-85f5-5611756d0ef3]]></Property>
+          <Property Type="Container" Name="UnpinButtonIcon"><![CDATA[player://resources/6a24bcbd-ee6a-4ea1-b743-4664a6d977f1]]></Property>
+          <Property Type="Visual" Name="ToolButtonsFillColor"><![CDATA[value:#FFFAFAFA]]></Property>
+          <Property Type="Visual" Name="ToolButtonsOutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+          <Property Type="Visual" Name="ToolButtonsRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="ToolButtonsFlat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="ToolButtonsShadow"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="ToolButtonsPressedColor"><![CDATA[value:#33000000]]></Property>
+          <Property Type="Visual" Name="ToolButtonsActivatedColor"><![CDATA[value:#E61A1A1A]]></Property>
+          <Property Type="Visual" Name="ExportButtonIcon"><![CDATA[player://resources/aa713f11-2976-4ffa-94f1-79d8e3d47ba5]]></Property>
+          <Property Type="Visual" Name="ExportButtonIconSelected"><![CDATA[player://resources/6b989fb1-97ec-4fb5-95ac-411eba9f55ba]]></Property>
+          <Property Type="Visual" Name="DrawingToolsIcon"><![CDATA[player://resources/960e08b3-8ac3-4eff-b99f-eeaaa92d1008]]></Property>
+          <Property Type="Visual" Name="DrawingToolsIconActivated"><![CDATA[player://resources/7bf38286-9737-4f89-97f1-7a251e3b3831]]></Property>
+          <Property Type="Visual" Name="AnnotationPenIcon"><![CDATA[player://resources/bca6e6a3-5945-4eb2-bda3-c06c72fd8a87]]></Property>
+          <Property Type="Visual" Name="AnnotationPenIconSelected"><![CDATA[player://resources/0aea46af-9437-488f-9e13-291a521d8d77]]></Property>
+          <Property Type="Visual" Name="AnnotationHighlighterIcon"><![CDATA[player://resources/7cedfac9-a1ad-41e0-b54e-af3d5611bf4f]]></Property>
+          <Property Type="Visual" Name="AnnotationHighlighterIconSelected"><![CDATA[player://resources/ec05d834-4a66-4f38-b74d-056be66c478b]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushLightIcon"><![CDATA[player://resources/4fac5d71-a9ed-42e9-98d6-72c7b6104dc7]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushLightIconSelected"><![CDATA[player://resources/02584d08-a1e1-43c3-adae-1d52a7a3e73e]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushLargeIcon"><![CDATA[player://resources/05ac8014-5fa4-4ab1-9bb0-e1314901ac83]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushLargeIconSelected"><![CDATA[player://resources/44f5d3b3-b5af-49a3-924f-282196f6110c]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserIcon"><![CDATA[player://resources/f137ea31-fcb2-44b3-9804-0faf3d5ad12d]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserIconSelected"><![CDATA[player://resources/86600d57-cb7d-403f-bc94-0d8495dab4ee]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserSmallIcon"><![CDATA[player://resources/0199c133-76d9-4b1b-9ae0-484df49bbf21]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserSmallIconSelected"><![CDATA[player://resources/fa60f508-f68d-4c77-b373-6935767ca537]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserMediumIcon"><![CDATA[player://resources/bc49918c-4221-44a2-b89f-cfa44525a579]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserMediumIconSelected"><![CDATA[player://resources/321f5482-0158-457e-81ba-16fef09255eb]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserLargeIcon"><![CDATA[player://resources/fb3bf3e4-204e-4682-af35-48bd06675c51]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserLargeIconSelected"><![CDATA[player://resources/379f1151-2084-4ad6-8928-928a9ba989dd]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserStrokeIcon"><![CDATA[player://resources/242b73f8-a6f8-4609-aa33-538d5822012c]]></Property>
+          <Property Type="Visual" Name="AnnotationEraserStrokeIconSelected"><![CDATA[player://resources/fdabddea-f9a1-43a1-9dc5-532463b8837f]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushFeltIcon"><![CDATA[player://resources/e385315f-540d-46b1-901f-a719ee8089aa]]></Property>
+          <Property Type="Visual" Name="AnnotationBrushFeltIconSelected"><![CDATA[player://resources/356b274a-5627-4fee-b7bf-1ae6068c074d]]></Property>
+          <Property Type="Visual" Name="AnnotationRedoIcon"><![CDATA[player://resources/0d8747dd-3534-4698-b2cd-20aa398b215f]]></Property>
+          <Property Type="Visual" Name="AnnotationRedoIconPressed"><![CDATA[player://resources/91909a53-9b33-4cdc-ad84-c6625c0b80f4]]></Property>
+          <Property Type="Visual" Name="AnnotationUndoIcon"><![CDATA[player://resources/02c3759a-8904-44c6-a79e-784a819bdcdd]]></Property>
+          <Property Type="Visual" Name="AnnotationUndoIconPressed"><![CDATA[player://resources/d7aa849a-9c76-4ca3-897f-b1598f1b4dac]]></Property>
+          <Property Type="Visual" Name="AnnotationWipeIcon"><![CDATA[player://resources/4637be15-ad0a-4df8-8f9b-1cc4c4de28f0]]></Property>
+          <Property Type="Visual" Name="AnnotationTakeSnapshotIcon"><![CDATA[player://resources/6bc78bd7-3367-43fa-9600-b967ddd12448]]></Property>
+          <Property Type="Visual" Name="ControlsFillColor"><![CDATA[value:#FFFAFAFA]]></Property>
+          <Property Type="Visual" Name="ControlsOutlineColor"><![CDATA[value:#FFB2B2B2]]></Property>
+          <Property Type="Visual" Name="ControlsRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Visual" Name="ControlsFlat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="ControlsShadow"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="TrackingBarFontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="RewindButtonIcon"><![CDATA[player://resources/adc2b8d1-49ea-4aab-a59a-07a5b549b149]]></Property>
+          <Property Type="Visual" Name="PlayButtonIcon"><![CDATA[player://resources/69aba549-de3c-47d2-9af2-2d5566f9e483]]></Property>
+          <Property Type="Visual" Name="PauseButtonIcon"><![CDATA[player://resources/2ca20b02-a1c0-4c06-a3d5-95b8147d67de]]></Property>
+          <Property Type="Visual" Name="MuteIcon"><![CDATA[player://resources/0ca71444-ea31-4d86-aacc-a4b02d97a842]]></Property>
+          <Property Type="Visual" Name="VolumeLevel1Icon"><![CDATA[player://resources/68b316d8-6dc8-4e26-a9bf-633fee36830f]]></Property>
+          <Property Type="Visual" Name="VolumeLevel2Icon"><![CDATA[player://resources/ccfa2f4c-bff4-4232-b574-5229e84c0353]]></Property>
+          <Property Type="Visual" Name="VolumeLevel3Icon"><![CDATA[player://resources/480d4a10-6c11-4e3b-850f-a3a9316b1bc2]]></Property>
+          <Property Type="Visual" Name="KeyboardButtonIcon"><![CDATA[player://resources/36bd63b2-4767-45d7-b799-134519f229df]]></Property>
+          <Property Type="Visual" Name="RefreshButtonIcon"><![CDATA[player://resources/7b555203-16e2-4ded-b2d2-bc83cc79aa48]]></Property>
+          <Property Type="Visual" Name="StopLoadingButtonIcon"><![CDATA[player://resources/f8d2a822-e52a-46a6-895b-be8b8cda2f2c]]></Property>
+          <Property Type="Visual" Name="NavigationIcon"><![CDATA[player://resources/0b54df74-1e2f-4369-b4b7-35242b14f56c]]></Property>
+          <Property Type="Visual" Name="ResetButtonIcon"><![CDATA[player://resources/d8012435-1237-4717-b366-74eb04a4d5a6]]></Property>
+        </AssetTemplate>
+      </Templates>
+    </Resource>
+    <Resource Key="addf0ae6-ccfa-4948-90ba-0d840081f3f2" Type="uri" Length="475" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Close-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="03918373-8c3c-4b55-a14a-e31a3e63f2bf" Type="uri" Length="190" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Minimize-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="82def5c0-afdc-4bbd-b52a-1834a34a9018" Type="uri" Length="305" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Maximize-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="038794a9-ec80-4819-ab0d-d9eba20f47c9" Type="uri" Length="309" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Unmaximize-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="f03c1c0e-cbd7-4265-85f5-5611756d0ef3" Type="uri" Length="548" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Pin-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="6a24bcbd-ee6a-4ea1-b743-4664a6d977f1" Type="uri" Length="496" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Unpin-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="aa713f11-2976-4ffa-94f1-79d8e3d47ba5" Type="uri" Length="481" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Export-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="6b989fb1-97ec-4fb5-95ac-411eba9f55ba" Type="uri" Length="463" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-export-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="960e08b3-8ac3-4eff-b99f-eeaaa92d1008" Type="uri" Length="869" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Drawing-tools-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="7bf38286-9737-4f89-97f1-7a251e3b3831" Type="uri" Length="864" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-drawing-tools-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="bca6e6a3-5945-4eb2-bda3-c06c72fd8a87" Type="uri" Length="664" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Pen-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="0aea46af-9437-488f-9e13-291a521d8d77" Type="uri" Length="1036" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-pen-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="7cedfac9-a1ad-41e0-b54e-af3d5611bf4f" Type="uri" Length="955" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Highlighter-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="ec05d834-4a66-4f38-b74d-056be66c478b" Type="uri" Length="1252" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-highlighter-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="4fac5d71-a9ed-42e9-98d6-72c7b6104dc7" Type="uri" Length="936" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Light-brush-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="02584d08-a1e1-43c3-adae-1d52a7a3e73e" Type="uri" Length="1158" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-light-brush-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="05ac8014-5fa4-4ab1-9bb0-e1314901ac83" Type="uri" Length="1032" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Large-brush-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="44f5d3b3-b5af-49a3-924f-282196f6110c" Type="uri" Length="1299" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-large-brush-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="f137ea31-fcb2-44b3-9804-0faf3d5ad12d" Type="uri" Length="723" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Eraser-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="86600d57-cb7d-403f-bc94-0d8495dab4ee" Type="uri" Length="1116" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-Eraser-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="4637be15-ad0a-4df8-8f9b-1cc4c4de28f0" Type="uri" Length="1450" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Clear-all-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="6bc78bd7-3367-43fa-9600-b967ddd12448" Type="uri" Length="1088" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Snapshot-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="adc2b8d1-49ea-4aab-a59a-07a5b549b149" Type="uri" Length="458" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Rewind-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="69aba549-de3c-47d2-9af2-2d5566f9e483" Type="uri" Length="391" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Play-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="2ca20b02-a1c0-4c06-a3d5-95b8147d67de" Type="uri" Length="259" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Pause-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="0ca71444-ea31-4d86-aacc-a4b02d97a842" Type="uri" Length="429" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Mute-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="68b316d8-6dc8-4e26-a9bf-633fee36830f" Type="uri" Length="471" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Volume-level-1-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="ccfa2f4c-bff4-4232-b574-5229e84c0353" Type="uri" Length="556" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Volume-level-2-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="480d4a10-6c11-4e3b-850f-a3a9316b1bc2" Type="uri" Length="682" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Volume-level-3-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="36bd63b2-4767-45d7-b799-134519f229df" Type="uri" Length="248" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Keyboard-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="7b555203-16e2-4ded-b2d2-bc83cc79aa48" Type="uri" Length="638" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Refresh-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="f8d2a822-e52a-46a6-895b-be8b8cda2f2c" Type="uri" Length="475" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Stop-loading-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="0b54df74-1e2f-4369-b4b7-35242b14f56c" Type="uri" Length="314" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Navigation-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="d8012435-1237-4717-b366-74eb04a4d5a6" Type="uri" Length="622" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Reset-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="0199c133-76d9-4b1b-9ae0-484df49bbf21" Type="uri" Length="675" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Erase_small-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="fa60f508-f68d-4c77-b373-6935767ca537" Type="uri" Length="1014" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-Erase_small-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="bc49918c-4221-44a2-b89f-cfa44525a579" Type="uri" Length="733" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Erase_medium-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="321f5482-0158-457e-81ba-16fef09255eb" Type="uri" Length="1137" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-Erase_medium-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="fb3bf3e4-204e-4682-af35-48bd06675c51" Type="uri" Length="801" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Erase_large-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="379f1151-2084-4ad6-8928-928a9ba989dd" Type="uri" Length="1295" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-Erase_large-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="242b73f8-a6f8-4609-aa33-538d5822012c" Type="uri" Length="907" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/EraserStroke-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="fdabddea-f9a1-43a1-9dc5-532463b8837f" Type="uri" Length="1414" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-EraserStroke-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="e385315f-540d-46b1-901f-a719ee8089aa" Type="uri" Length="690" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Felt-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="356b274a-5627-4fee-b7bf-1ae6068c074d" Type="uri" Length="998" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Selected-Felt-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="0d8747dd-3534-4698-b2cd-20aa398b215f" Type="uri" Length="650" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Redo-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="91909a53-9b33-4cdc-ad84-c6625c0b80f4" Type="uri" Length="663" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Pressed-Redo-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="02c3759a-8904-44c6-a79e-784a819bdcdd" Type="uri" Length="626" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Undo-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="d7aa849a-9c76-4ca3-897f-b1598f1b4dac" Type="uri" Length="689" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Icons/Pressed-Undo-icon-IntuiFace-White.png">
+      <Infos>
+        <Tags>icon</Tags>
+      </Infos>
+    </Resource>
+    <Resource Key="ed3832e1-7d80-4353-8cf4-e3074d94596a" Type="uri" Length="10568" LastModificationDate="2018-03-01T13:57:32.6564737Z" Archive="SmallFiles.zip" DefaultValue="player://data/Photoshop/wayfindingapp/bg.png">
+      <ComposerExtensions>
+        <Extension Name="Photoshop" Value="wayfindingapp.psd">
+          <ComplexAttributes>
+            <Attribute Key="Length" Value="4006606" />
+            <Attribute Key="LastModificationDate" Value="01/03/2018 13:56:47" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+    </Resource>
+    <Resource Key="9807b4d0-72f8-416d-886b-d4797dbb9ae2" Type="uri" Length="23703" LastModificationDate="2018-03-01T13:57:32.6649953Z" Archive="SmallFiles.zip" DefaultValue="player://data/Photoshop/wayfindingapp/logoheavent.png">
+      <ComposerExtensions>
+        <Extension Name="Photoshop" Value="wayfindingapp.psd">
+          <ComplexAttributes>
+            <Attribute Key="Length" Value="4006606" />
+            <Attribute Key="LastModificationDate" Value="01/03/2018 13:56:47" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+    </Resource>
+    <Resource Key="e6e800fe-2724-43ea-b5b6-c3a4a4445193" Type="uri" Length="15875" LastModificationDate="2018-03-01T13:57:32.6594804Z" Archive="SmallFiles.zip" DefaultValue="player://data/Photoshop/wayfindingapp/placeholder.png">
+      <ComposerExtensions>
+        <Extension Name="Photoshop" Value="wayfindingapp.psd">
+          <ComplexAttributes>
+            <Attribute Key="Length" Value="4006606" />
+            <Attribute Key="LastModificationDate" Value="01/03/2018 13:56:47" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+      <Alternate Value="player://data/Generated/6db8949bf76cfedb6020ed51185cbc48.png" Width="226" Height="322" Length="15637" LastModificationDate="2018-03-01T16:40:57.6313476Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="b71aeba0-c65b-4ed0-a99e-61709270baa5" Type="uri" Length="21176" LastModificationDate="2018-03-01T13:57:32.6670018Z" Archive="SmallFiles.zip" DefaultValue="player://data/Photoshop/wayfindingapp/popupinfo.png">
+      <ComposerExtensions>
+        <Extension Name="Photoshop" Value="wayfindingapp.psd">
+          <ComplexAttributes>
+            <Attribute Key="Length" Value="4006606" />
+            <Attribute Key="LastModificationDate" Value="01/03/2018 13:56:47" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+    </Resource>
+    <Resource Key="a4425bf8-67e0-4392-a5b4-708e39302d93" Type="uri" Length="5513" LastModificationDate="2018-03-01T14:05:16.0253037Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/speech.png">
+      <ComposerExtensions>
+        <Extension Name="Photoshop" Value="wayfindingapp.psd">
+          <ComplexAttributes>
+            <Attribute Key="Length" Value="4006606" />
+            <Attribute Key="LastModificationDate" Value="01/03/2018 13:56:47" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+    </Resource>
+    <Resource Key="adf1a02b-d7fc-4586-a1e5-e0dec650688f" Type="uri" Length="18619" LastModificationDate="2018-02-21T10:08:42Z" DefaultValue="player://data/InterfaceAssets/Weather/Weather.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Weather/icon_weather_32.png" Length="2704" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Local Weather.dax" Length="57721" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Local Weather.png" Length="2641" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/DefaultAssets/DefaultImage.png" Length="64259" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/Images/Drop-icon.png" Length="1830" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/Images/handle_released_1.png" Length="381" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/Images/Wind-Icon.png" Length="1655" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/DateBC/DateBC.ifd" Length="6379" LastModificationDate="2018-02-21T10:08:42Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/DateBC/DateBC.js" Length="2668" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/DateBC/moment-timezone-with-data.js" Length="187569" LastModificationDate="2018-01-17T13:51:32Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/DateBC/moment-with-langs.js" Length="291412" LastModificationDate="2018-01-17T13:51:32Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/TextManipulationBC/icon_text_manipulation_32.png" Length="249" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd" Length="8725" LastModificationDate="2018-02-21T10:08:42Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/TextManipulationBC/TextManipulationBC.js" Length="6180" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/WeatherIconBC/icon_weather_32.png" Length="340" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd" Length="4584" LastModificationDate="2018-02-21T10:08:42Z" />
+        <Dependency URI="player://data/InterfaceAssets/Weather/Data/InterfaceAssets/WeatherIconBC/WeatherIconBC.js" Length="624" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd" Length="4584" LastModificationDate="2018-02-21T10:08:42Z" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/icon_weather_32.png" Length="340" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.js" Length="624" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="434e8d54-6e0a-4297-9ac2-5194d7267fde" Type="uri" Length="1830" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Drop-icon.png">
+      <Alternate Value="player://data/Generated/9d74ab5b78ab7e2e9d2d586f9e9ef16f.png" Width="50" Height="75" Length="1174" LastModificationDate="2018-03-01T14:51:55.0224118Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="271864f1-55dc-407e-8715-66470387ade4" Type="uri" Length="1655" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Wind-Icon.png">
+      <Alternate Value="player://data/Generated/f8122e04bce9a445e997144a8fb8fb57.png" Width="16" Height="16" Length="326" LastModificationDate="2018-03-01T14:51:55.0209079Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="0d039999-97d0-4dbe-92dd-034f0779b611" Type="uri" Length="4584" LastModificationDate="2018-02-21T10:08:42Z" DefaultValue="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/icon_weather_32.png" Length="340" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/WeatherIconBC/WeatherIconBC.js" Length="624" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="8d4ec329-9106-4fa9-8866-b3ceb5374ea6" Type="uri" Length="8725" LastModificationDate="2018-02-21T10:08:42Z" DefaultValue="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/icon_text_manipulation_32.png" Length="249" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.js" Length="6180" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="9ae090b6-ce91-4870-b420-0a7ebdb3faa6" Type="uri" Length="6379" LastModificationDate="2018-02-21T10:08:42Z" DefaultValue="player://data/InterfaceAssets/DateBC/DateBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/DateBC/DateBC.js" Length="2668" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/icon_date_32.png" Length="323" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/moment-timezone-with-data.js" Length="187569" LastModificationDate="2018-01-17T13:51:32Z" />
+        <Dependency URI="player://data/InterfaceAssets/DateBC/moment-with-langs.js" Length="291412" LastModificationDate="2018-01-17T13:51:32Z" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="2558ced5-6c4b-4288-bbb8-c52374c761e4" Type="uri" Length="20179" LastModificationDate="2018-02-21T10:08:40Z" DefaultValue="player://data/InterfaceAssets/ClockJS/Clock.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.dax" Length="13593" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.js" Length="7617" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Clock.png" Length="2198" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/EventEmitter.js" Length="16040" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/icon_clock_32.png" Length="569" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/moment-timezone-with-data.js" Length="187569" LastModificationDate="2018-01-17T13:51:32Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/moment-with-langs.js" Length="291412" LastModificationDate="2018-01-17T13:51:32Z" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/HoursNeedleW.png" Length="14728" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/MinutesNeedleW.png" Length="15162" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/ClockJS/Data/Images/SecondsNeedleW.png" Length="14704" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="5aaed4e2-2b3c-4212-9744-df678051db3b" Type="uri" Length="5423" LastModificationDate="2018-03-02T14:44:32.7772551Z" DefaultValue="player://data/InterfaceAssets/BDD_HEAVENT_xlsx/BDD_HEAVENT.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/BDD_HEAVENT_xlsx/excel_icon.png" Length="425" LastModificationDate="2018-03-01T14:41:45.1017374Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/BDD_HEAVENT_xlsx/placeholder.png" Length="15875" LastModificationDate="2018-03-01T13:57:32.6594804Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/BDD_HEAVENT_xlsx/image/elecom.png" Length="2321" LastModificationDate="2018-03-01T10:36:20.9570936Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/BDD_HEAVENT_xlsx/BDD_HEAVENT.xlsx" Length="20619" LastModificationDate="2018-03-02T14:44:31.2166201Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="0f4f5f6b-5d73-42d5-95fe-29970f50b387" Type="uri" Length="1482" LastModificationDate="2018-01-17T13:51:32Z" DefaultValue="player://data/InterfaceAssets/EvalBC/EvalBC.ifd">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/EvalBC/EvalBC.js" Length="2739" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/EvalBC/icon_eval_32.png" Length="213" LastModificationDate="2018-01-17T13:51:32Z" Archive="SmallFiles.zip" />
+      </Dependencies>
+    </Resource>
+    <Resource Key="a04921ac-58d1-499c-8c33-18f1b7ca6205" Type="font" DefaultValue="value:Segoe UI">
+      <Dependencies>
+        <Dependency URI="player://data/Contents/SEGOEUIL.iff" Length="878372" LastModificationDate="2017-09-29T13:41:28.8575721Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>300</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUILI.iff" Length="441372" LastModificationDate="2017-09-29T13:41:35.1393311Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>300</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGOEUISL.iff" Length="816540" LastModificationDate="2017-09-29T13:41:28.8575721Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>350</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUISLI.iff" Length="448756" LastModificationDate="2017-09-29T13:41:35.1393311Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>350</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGOEUI.iff" Length="925736" LastModificationDate="2017-09-29T13:41:27.0605511Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>400</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGOEUII.iff" Length="509768" LastModificationDate="2017-09-29T13:41:28.8575721Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>400</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUISB.iff" Length="941172" LastModificationDate="2017-09-29T13:41:28.8419462Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>600</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUISBI.iff" Length="439396" LastModificationDate="2017-09-29T13:41:35.1393311Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>600</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGOEUIB.iff" Length="914092" LastModificationDate="2017-09-29T13:41:28.8575721Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>700</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGOEUIZ.iff" Length="523052" LastModificationDate="2017-09-29T13:41:28.8575721Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>700</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUIBL.iff" Length="324448" LastModificationDate="2017-09-29T13:41:28.8419462Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>900</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/SEGUIBLI.iff" Length="351908" LastModificationDate="2017-09-29T13:41:35.1393311Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>900</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+      </Dependencies>
+    </Resource>
+    <Resource Key="3bb70609-e44f-42f6-9e26-482b2f3e0f7a" Type="font" DefaultValue="value:Gotham">
+      <Dependencies>
+        <Dependency URI="player://data/Contents/GOTHAM LIGHT REGULAR.iof" Length="29656" LastModificationDate="2014-12-27T08:27:24Z" Archive="SmallFiles.zip">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>300</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/GOTHAM-NARROW-BOOK-59CFBEBC47E0C.iof" Length="124506" LastModificationDate="2017-09-30T15:56:44.8853517Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>400</FontWeight>
+            <FontStretch>semicondensed</FontStretch>
+          </Infos>
+        </Dependency>
+      </Dependencies>
+    </Resource>
+    <Resource Key="ff5f1396-bbb7-44e2-aa89-716bdc43a284" Type="font" DefaultValue="value:Verdana">
+      <Dependencies>
+        <Dependency URI="player://data/Contents/VERDANA.iff" Length="243284" LastModificationDate="2017-09-29T13:41:28.8106932Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>400</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/VERDANAI.iff" Length="223308" LastModificationDate="2017-09-29T13:41:28.8106932Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>400</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/VERDANAB.iff" Length="211316" LastModificationDate="2017-09-29T13:41:28.8106932Z">
+          <Infos>
+            <FontStyle>normal</FontStyle>
+            <FontWeight>700</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+        <Dependency URI="player://data/Contents/VERDANAZ.iff" Length="229848" LastModificationDate="2017-09-29T13:41:28.8106932Z">
+          <Infos>
+            <FontStyle>italic</FontStyle>
+            <FontWeight>700</FontWeight>
+            <FontStretch>normal</FontStretch>
+          </Infos>
+        </Dependency>
+      </Dependencies>
+    </Resource>
+    <Resource Key="15defd17-8394-4fae-a641-08e0a1be6695" Type="snapshot" Length="247944" LastModificationDate="2018-03-02T14:59:24.9957311Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/33d0780f.png" />
+    <Resource Key="b6065701-78e3-4011-b3d0-829a690a19fc" Type="snapshot" Length="247944" LastModificationDate="2018-03-02T14:59:24.9957311Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
+    <Resource Key="20142e22-87f2-473d-b3c3-7767e7d870fd" Type="uri" Length="200290" LastModificationDate="2018-03-01T09:34:32.4415549Z" DefaultValue="player://data/Images/eegeo_indoor_maps.png" />
+    <Resource Key="9e1dca89-ac09-420f-859d-fe10836530c2" Type="uri" Length="16538" LastModificationDate="2018-03-01T09:58:38.8856341Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/search2.png">
+      <Alternate Value="player://data/Generated/552ec3eba69ff0608bbbb1461eabacd5.png" Width="52" Height="52" Length="2130" LastModificationDate="2018-03-01T17:04:55.6961356Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="a9153f65-3a32-4282-b711-32eee5d96373" Type="uri" Length="7926" LastModificationDate="2018-03-02T09:19:14.0668288Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/error%20(1).png">
+      <Alternate Value="player://data/Generated/797041d3fb8532d4dc0fe7ad9e1bc6d6.png" Width="128" Height="128" Length="3663" LastModificationDate="2018-03-02T09:19:56.3406755Z" Archive="SmallFiles.zip" />
+    </Resource>
+    <Resource Key="c6b6602d-31c6-4f01-bde9-7025db69b30a" Type="uri" Length="566478" LastModificationDate="2018-03-02T09:25:44.9493977Z" DefaultValue="player://data/Images/slider-1000x323-2018-11(1).png" />
+    <Resource Key="0e35265b-b325-49de-97c3-8a2188543443" Type="uri" Length="900" LastModificationDate="2018-03-02T09:57:49.635533Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/triangleselect.png" />
+  </Resources>
+  <Sequence>
+    <SpaceRef Space="player://visuals/heavent-wayfinding/Scene%201/" />
+  </Sequence>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>JSFJnrbl2J4W0auUtGHO2xRmDis=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>pZ80fjVcCvKi0fzBdGXlYJ7z0cJCAGopJZsMJ2tb5bmeN/Ov7MaSJYeXMNYw+CY6Vfzo4NmN5kWFlkVRXKgJH4/7QSsPAGwBkBTy3W5FDPzxcORMgqKtPZps0rjwQ+B/Zze4GiLOGalI6mrOkoDb77+IfFYfwKRrn2rHCICdbfvBKf3HMm9dqRb6yi2vC1RPROVtDzKc4Aq0gkDQhVo3UaJQs1TGbn90TUP6iar9tru7GpxFAE7uMB5wLnuq3oLZvaZTVcqCFQdOQJKEpnBfKedir2E22cUPxuCjwA47TWAHd36VDKeQD5d9Th2JpgPxwdZiQoR72ZyJiKJhF6vhwg==</SignatureValue>
+    <Object Id="private" MimeType="text/xml" Encoding="utf-8">
+      <SignatureData xmlns="">
+        <EditonLevel>ENTERPRISE</EditonLevel>
+        <HostName>DESKTOP-215QVLP</HostName>
+        <Data><![CDATA[4ouZEN2p08u+aDMtkuHxQwL4HaGMQYsVV1SFgaBQeQYFHoXXzpJeTWDt9/9gTkezs5fvjlnENhT8T1qhmHpOLSPVucwVuFZUiCbPyJicf0Hi2rvn6v6esj/xrMuIrm/XPwMYN4fnbQGsNuCZSaW1ABUMNATDKfVOhJ0baroCYkBdNO9rhYbFK9fxwYkkbqhDnbV2Ww6zzUBoCwykDOaIKAqwrLTTwitGoSB6LSpBTZl7ybLHR8jHPUUluWhsJbKoKnudtnD4GWygXTK7MJKGlne8uMF9EM3Xg1pRh2WT6bbf7DFo3YiZzheYOqKVPOV5vCix37H7ynyJF75iWT+tAXeVlpPJ/DCmwfCv/u1UGqQgn0TcLo3Rel686vNe5ATVrVPg19ksW+jqSrgRP8V3g8SkFTsAP/0Gvw3ysMoaUvBQvfmtKtwN7ReeCFk0ayr9kMbXTj/lyYcT6rkF4giJcme6ae3Y9ev52/Sre6oj99NwH2R8QOllF9NF9gHhHs3/fo9cM6PjLilM8Iq83u48EPULwlmIrtHzPOn5sAZterRdpYdR9g1f4lY9y+1rD4d3z3DwGQM4IprVHwWky0oHG8kepOAfi5K5v/P1rZ7j3a6X568j2ktWQ3NXYKO94dBEtlvwMq3QteElTVN2Hqoul5C8C/rAir6rn4/Z51fVMsbV+y4nlIBXdAY61YXl+S+3xzHZd7qN3xnZ6pF2/3wjKcuaPWG0CGys6TuYiH/LnoLSG5xdfmb4Y+THDT9W2O8MGFcKu6JLKoIGbH9GOVhFOFOYsnrP2AOMYYaDPshZkBFGuIpQtLME+ztP2PvC/fx/4Y+O82u0dXdSWjyDaX7WvSPlNGNOc1YK3MIbFz8a13wNXJhT50Z31oOXUKIetdZMWrjM4Ke9/bUlC2v3tIposMIZ5cknwXPgjn5p/gFy3VREUg5kJVBoSds6MZJhC3ssLFOs36zmjY0aRtFCIfJnwz5yk9v4MjCj6zpUEdY1BVyWbqtJBhnlv/mXvaAiJNqTAgc3zbWex+p9owhEQZtbOIs8DCL3MVs3x4W9h5yTd8ahVLsUwFQjVpthVAtAaTF9ctNbmSyi7ajh3UN93ALKYdzBLqR5LeHZZD5mx93atQ5sv2Zbm2dJ6tAUBcnX19fXIRg2aAXXiOaZWU7qS4lax2XmARZ4Ghj10nzclpfhM9MZIPh1zb1qc+ksbmKat8fxm39lHfqmLkkXsWoG1PAUmq5wcDlFnQGR8TEf0zYIWmC5tsWlxyo4ltyd91D7b2lmN4bsdSv3G91caWprmrjga+/kGEbJ3lixcbuAJ6LWEADSw9Bmrf02+ORn+P9jn13yiXQw+fN67f7TcM71gPs/dMOur1bREiElEMXgNsQVoEnHUP3X/vCm7ZrPtMuZ3ZrIM9s8Uv1IFQ0jImTpsBzcE8Y0CVy2yAFc55AV2QjaK3aEVpjKqBZY0hv9Sp/ItDCsTrQua4YePwTMJEjmtDWIO0AAg6IgyNnupQ8vyc+grGMJWevwqSD1qkkHlQDRK4yJTGgI6VvhtsJYhoBiZFSMAcJ7T9honF6P5b7hm/FVzwRMfvbl2i4TPrVUDcrL8107Fdo/hsRnpa+qLOhDzwDuocgawzxAYlbyVt+4PNuu8P522I/FOP5m2tXbYdwvwEh041Lq210yyIaUOiIDuWiKhvIjXWxKyBoBlH41gwjwFVc2YI3YsahczqjcwvGz7gAuzminsaxCOP7BfkyPN87V1EnwhH7nu7HQHiebQPZx5TYjNI1Wkr5toRkCFDak83ccj2dEiMZFRPNMDJ1vqEMywkE0J/qwNd+8ftKPA5XgPwsKCNSpNzc8OBPSnzFq/knE0qPjavQ9jwLrYFl/z2QpxtupwhnjOAkQfFkyUFRX4eJoB7wKgy2liRVYqrFwAnYvgXc+LZ81IACpzhCDQTnRdzGkODDqZJIyWDtUE1Y10RxC08LCBLa3HqqNCdi/b9/6kPqoNPKugbIYvTgC9AC1X/B/BdIUrDdM3e52byUwogS+3iyfNuP1/Os8dvkyizK30D6c5PFEprWKaxEM6FvccpRmqFZhE8JhVF6r3tbUVHftfvt6eMNjkdPcCzntP2HdX5lM1yyug1djgTw9Gp0qLnTU+SjF+7+KAvKjsysyi5eo9dfK/UblQU4KRdj4yyY7nB74e4lxH2FrZl/GkiGltA==]]></Data>
+        <Crypto>
+          <IV><![CDATA[MJxABw2UeU3w9nmK5Wwh6Qm4FLQEc4O3ppOn4EnHHtNGgedqoChp/sWmwKZPdDuwNwpA/gb3wPcvKtbd0SzjwhY9/tixa3MjctUO6+eMrWsYKGirrMRsXjvrg7r+hJyntqSUYJ7DQBPvGNMXrXf/ec2nGaKDOHA5C5A1g2uUoy6vtJ1x9P0PAqprpXvUxBdpIhMkWMjuZaLy1rc8jhNi/qtktwY0t5aclaCdIyj5uOZv1guyrGz5hd5TzuRzIHSLF7u4+/SUDiCdx59ReRdM+eNTCMmlKuam20D04DbS7gdkqutT/NMTtrb411v6Rn6CHMaQ99thiAChLsqbfEvtrg==]]></IV>
+          <Key><![CDATA[ACOtJV4A/V0OWM4WvTt3v/MtPFUwbORZwx9bhIuaHb6/MMDHIdBtTPqZ5rmTYHoOzBxpr7gKWNi70BkZipClHcdrOuMn7/QnRIIJMN8Nyxl+v2BRwsEFxT2ZKFVhjdLE0UN2HJuxeizI+FiP2dOMdBKL/cBmZGFzi7mdISagyA7Y4693AioPjo2eMYl49R1asQ2rjpsXEl6zjmmPOYfB6in3ws/jw0CWAdMHiVstr0FnQ5MQqlF3XK0mDiU32DakfVAZkUmp4C4+wLwXd5mG04njR1EKn6iosT3BFydLzh9+R+5631V9rJs2OWjC6iZkcFWdvXhal0AxpThxBHC4Uw==]]></Key>
+        </Crypto>
+      </SignatureData>
+    </Object>
+  </Signature>
+</Presentation>

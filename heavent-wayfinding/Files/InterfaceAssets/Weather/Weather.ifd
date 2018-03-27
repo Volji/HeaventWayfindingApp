@@ -1,0 +1,448 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "Weather:v3",
+  "name": "Weather",
+  "version": "v3.6",
+  "title": "Weather",
+  "description": "Display current and forecast weather for specified city.",
+  "protocol": "rest",
+  "baseUrl": "http://social.intuilab.com/weather/free/v2/",
+  "basePath": "weather/free/v2/",
+  "rootUrl": "http://social.intuilab.com/",
+  "servicePath": "weather/free/v2/",
+  "requestDelay": 250,
+  "icons": {
+    "x32": "icon_weather_32.png"
+  },
+  "parameters": {
+    "key": {
+      "type": "string",
+      "title": "API key",
+      "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports.",
+      "location": "query"
+    }
+  },
+  "auth": "",
+  "schemas": {
+    "Weather": {
+      "id": "Weather",
+      "type": "object",
+      "properties": {
+        "data": {
+          "id": "data",
+          "type": "object",
+          "properties": {
+            "current_condition": {
+              "id": "current_condition",
+              "title": "Current weather",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "observation_time": {
+                    "type": "string",
+                    "title": "Observation time",
+                    "description": "Time of the observation "
+                  },
+                  "temp_C": {
+                    "type": "integer",
+                    "title": "Temperature Celsius",
+                    "description": "The temperature in degrees Celsius"
+                  },
+                  "temp_F": {
+                    "type": "integer",
+                    "title": "Temperature Fahrenheit",
+                    "description": "The temperature in degrees Fahrenheit"
+                  },
+                  "windspeedMiles": {
+                    "type": "integer",
+                    "title": "Wind speed mph",
+                    "description": "Wind speed in miles per hour"
+                  },
+                  "windspeedKmph": {
+                    "type": "integer",
+                    "title": "Wind speed km/h",
+                    "description": "Wind speed in kilometres per hour "
+                  },
+                  "winddirDegree": {
+                    "type": "integer",
+                    "title": "Wind direction degrees",
+                    "description": "Wind direction in degrees"
+                  },
+                  "winddir16Point": {
+                    "type": "string",
+                    "title": "Wind direction compass",
+                    "description": "Wind direction in 16-point compass Example N"
+                  },
+                  "weatherCode": {
+                    "type": "integer",
+                    "title": "Weather code",
+                    "description": "Weather condition code"
+                  },
+                  "weatherDesc": {
+                    "type": "array",
+                    "description": "Weather condition description",
+                    "title": "Weather descriptions",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "weatherIconUrl": {
+                    "type": "array",
+                    "description": "URL to weather icon",
+                    "title": "Weather icons",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "precipMM": {
+                    "type": "number",
+                    "title": "Precipitation",
+                    "description": "Precipitation in millimetres"
+                  },
+                  "humidity": {
+                    "type": "number",
+                    "title": "Humidity",
+                    "description": "Humidity"
+                  },
+                  "visibility": {
+                    "type": "integer",
+                    "title": "Visibility",
+                    "description": "Visibility in kilometres"
+                  },
+                  "pressure": {
+                    "type": "integer",
+                    "title": "Pressure",
+                    "description": "Atmospheric pressure in millibars"
+                  },
+                  "cloudcover": {
+                    "type": "integer",
+                    "title": "Cloud cover percentage",
+                    "description": "Cloud cover in percentage"
+                  }
+                }
+              }
+            },
+            "weather": {
+              "id": "weather",
+              "type": "array",
+              "title": "Weather",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "title": "Forecast date",
+                    "description": "Local forecast date"
+                  },
+                  "maxtempC": {
+                    "type": "integer",
+                    "title": "Maximum Temperature Celsius",
+                    "description": "Maximum temperature of the day in degree Celsius"
+                  },
+                  "maxtempF": {
+                    "type": "integer",
+                    "title": "Maximum Temperature Fahrenheit",
+                    "description": "Maximum temperature of the day in degree Fahrenheit"
+                  },
+                  "mintempC": {
+                    "type": "integer",
+                    "title": "Minimum Temperature Celsius",
+                    "description": "Minimum temperature of the day in degree Celsius"
+                  },
+                  "mintempF": {
+                    "type": "integer",
+                    "title": "Minimum Temperature Fahrenheit",
+                    "description": "Minimum temperature of the day in degree Fahrenheit"
+                  },
+                  "hourly": {
+                    "id": "hourly",
+                    "title": "Hourly forecast",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "tempC": {
+                          "type": "integer",
+                          "title": "Temperature Celsius",
+                          "description": "The temperature in degrees Celsius"
+                        },
+                        "tempF": {
+                          "type": "integer",
+                          "title": "Temperature Fahrenheit",
+                          "description": "The temperature in degrees Fahrenheit"
+                        },
+                        "FeelsLikeC": {
+                          "type": "integer",
+                          "title": "Feels like temperature in Celcius"
+                        },
+                        "FeelsLikeF": {
+                          "type": "integer",
+                          "title": "eels like temperature in Fahrenheit"
+                        },
+                        "windspeedMiles": {
+                          "type": "integer",
+                          "title": "Wind speed mph",
+                          "description": "Wind speed in miles per hour"
+                        },
+                        "windspeedKmph": {
+                          "type": "integer",
+                          "title": "Wind speed km/h",
+                          "description": "Wind speed in kilometres per hour "
+                        },
+                        "winddirDegree": {
+                          "type": "integer",
+                          "title": "Wind direction degrees",
+                          "description": "Wind direction in degrees"
+                        },
+                        "winddir16Point": {
+                          "type": "string",
+                          "title": "Wind direction compass",
+                          "description": "Wind direction in 16-point compass Example N"
+                        },
+                        "weatherCode": {
+                          "type": "integer",
+                          "title": "Weather code",
+                          "description": "Weather condition code"
+                        },
+                        "weatherDesc": {
+                          "type": "array",
+                          "description": "Weather condition description",
+                          "title": "Weather descriptions",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "weatherIconUrl": {
+                          "type": "array",
+                          "description": "URL to weather icon",
+                          "title": "Weather icons",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "precipMM": {
+                          "type": "number",
+                          "title": "Precipitation",
+                          "description": "Precipitation in millimetres"
+                        },
+                        "time": {
+                          "type": "number",
+                          "title": "Time of forecast"
+                        },
+                        "humidity": {
+                          "type": "number",
+                          "title": "Humidity",
+                          "description": "Humidity"
+                        },
+                        "visibility": {
+                          "type": "integer",
+                          "title": "Visibility",
+                          "description": "Visibility in kilometres"
+                        },
+                        "pressure": {
+                          "type": "integer",
+                          "title": "Pressure",
+                          "description": "Atmospheric pressure in millibars"
+                        },
+                        "cloudcover": {
+                          "type": "integer",
+                          "title": "Cloud cover percentage",
+                          "description": "Cloud cover in percentage"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "info": {
+          "id": "info",
+          "type": "object",
+          "properties": {
+            "errorMessage": {
+              "type": "string",
+              "title": "Error Message",
+              "description": "Error Message"
+            },
+            "error": {
+              "type": "boolean",
+              "title": "Error",
+              "description": "Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "WeatherRes": {
+      "methods": {
+        "GetLocalWeather": {
+          "id": "worldweatheronline.weather",
+          "isExternalAsset": "true",
+          "path": "weather.ashx",
+          "httpMethod": "GET",
+          "description": "Display current and forecast weather for specified city",
+          "templateDesignAccelerator": "Local Weather.dax",
+          "title": "Local Weather",
+          "parameters": {
+            "q": {
+              "type": "string",
+              "title": "Location",
+              "description": "Specify the location",
+              "location": "query",
+              "required": true,
+              "default": "London"
+            },
+            "num_of_days": {
+              "type": "integer",
+              "title": "Number of days",
+              "description": "Number of days of forecast",
+              "location": "query",
+              "required": true,
+              "default": "5",
+              "maximum": "15",
+              "minimum": "1"
+            },
+            "lang": {
+              "type": "string",
+              "title": "Language",
+              "description": "Language for the forecast",
+              "location": "query",
+              "default": "en",
+              "enum": [
+                "en",
+                "ar",
+                "bn",
+                "bg",
+                "zh",
+                "zh_tw",
+                "cs",
+                "nl",
+                "fi",
+                "fr",
+                "de",
+                "el",
+                "hi",
+                "hu",
+                "it",
+                "ja",
+                "jv",
+                "ko",
+                "zh_cmn",
+                "pl",
+                "pt",
+                "ro",
+                "ru",
+                "sr",
+                "sk",
+                "es",
+                "sv",
+                "tr",
+                "uk",
+                "vi"
+              ],
+              "enumTitle": [
+                "English",
+                "Arabic",
+                "Bengali",
+                "Bulgarian",
+                "Chinese Simplified",
+                "Chinese Traditional",
+                "Czech",
+                "Dutch",
+                "Finnish",
+                "French",
+                "German",
+                "Greek",
+                "Hindi",
+                "Hungarian",
+                "Italian",
+                "Japanese",
+                "Javanese",
+                "Korean",
+                "Mandarin",
+                "Polish",
+                "Portuguese",
+                "Romanian",
+                "Russian",
+                "Serbian",
+                "Slovak",
+                "Spanish",
+                "Swedish",
+                "Turkish",
+                "Ukrainian",
+                "Vietnamese"
+              ]
+            },
+            "tp": {
+              "type": "string",
+              "title": "Forecast interval",
+              "description": "Specifies the weather forecast time interval in hours.",
+              "location": "query",
+              "default": "24",
+              "enum": [
+                "24",
+                "12",
+                "3",
+                "6"
+              ],
+              "enumTitle": [
+                "Daily average",
+                "Day / night",
+                "3 hours",
+                "6 hours"
+              ]
+            },
+            "format": {
+              "type": "string",
+              "title": "Response format",
+              "description": "Output format as JSON, XML, CSV or TAB ",
+              "location": "query",
+              "default": "json",
+              "readonly": true
+            }
+          },
+          "response": {
+            "$ref": "Weather",
+            "description": "The response"
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN2",
+      "data": "O1edSfAYd4eEEJ018YWkTBgVtmOrKuHgJwyQEue0Ogpb+ZZ7rCCKVXMBDslWQw6p7F7eFu73WZDF0Vz4RHIUIKCesrEvCN/qTR53jKSRPrg4BZ5roJAfFlljITcBHFaoPMG0LuJonSC0TIRUZasfOAxcm7Q8HjH85Bk8qq6XnikTVnW2Dv0tNw7XWmXKzrrD9eyThuiS7tVhBifdzdUPT/1S0zkscvX6VLpUsEkquXFv4o/fHxGui6T8J3nshavGrz662vHKna3oJin8aIPY2hZiCEiKyKLT2PHZUBkVR+lghm2GS+9UhjV32GTgOlQZxkmQ7a9mMS+deQsNi9GcUD1GKdSBUlVu+6++UAJjscIJsw+iDvF/zs/gTM5QGh/Hx+GIwqUMPLiSjKp35XyhWqsDGzoLnjuS2heB7k4bsSgASWXSfGM7pYm+nT6b8kpVNhkImANq9JkCKL8r/j9/VarSGCR/1nzKJg4G05M+N75isdhKw2Sa5DPLfJIRyTwIemizRK/dywJuXSVJ+464PUX54q5KdzlEjJvrtjwcwTlaeKdQfooKHlweTuo69RTmRsL1eCFZZk033cFCw6r58WNnUdSDGgNeHNPuqBFe5rPDM9NEYHjj+h3sjCbCC0XZNVOn2r9ct7GlzLYbVKUhKFQ6eCGF4KK8rxoo8FZVSUMbrSgUgZc+FRMWxvaeLDvQlP883e1/MRvEHDb+kIwcN6Ig4ouIK36dDnDj+3aT2DIrSSwWpmiOR1HrAvP6w7DahSp/gkoQNSytNuG8gVyiJGUA/+TBqkDvR+/eXdClmGQG/x22qZ2XFLN3wjBMIMxAfYEU5Xrk9swYl0YQlxxpun0pmGl/1JKc2HnBGWuF7pB3vj9OmUE0metueB5pq4gwhcPShODo2nzBYtP1M/MbyqdyPSV6dffIW2eGhZJPYorAvJOGuX6+e3luMlpRlhhESpdyLsUyx//MQ8RZ2GMUT/gfw5j7RlUXgJe6uaw4ZKSPduQHM5oQxoUWeU3LfPB8D3J7fhJ+B0J98wZzUy2jom2CnZtwKH0YFTm+Apnj3qg8Eu+th1gdjoZJin2vJKzzt42O6yS6nDlomBrPq0wT+plHWBqtagSBIvNu6Hga5+YgmazkX4BXv0ri3Kqekd+GpsDtrm3v+yj9cPiAcB0/W6l3j+IwVj9SiGuPyUC47rERFj/UFqU/6yTZKTXWZGORQQonA9j4QisQA9bAS8leOlFyUj1PbbzCx+qV9JNJaV1j8AdRYy9PgBsosocp1+y6YnwvpFdRWJ3r/Nb0I7I3EzTN33OA489/SXdZmcQzZ1b0ZxBQKxKTXYNwsdDSQtIVJMbwDc1I6Q5vgtcoVTuNPmM8YurE8JUUOS14B+bwQk6XKKAuGxD8ewOiP/xHrj/x5Gqe3IUo19TbIqZUVuyF/Au+TS/JJ0EuknyMbjafcwCD/BDyAdJakjNBXUbZ+zNhRIkztV1IQ4/ndy7lHCQ1lYGLUtJa/Zi8n+xbXCoxjGD+jLbXiBRDwst14fK7lpKuGHXlSiJt7xm4w7Ci8Ond+y1kOohwmydOSwpcdNWFGuyWi+UD1Vf+eHgsReyEt8hPzH6SIMIurU259DYuHMLlnPpLBlAS5cphx2q4pb50/lFS0xJNUQjfb68LcL0cXLLxePiTtx3EDXJXzhVzJFV9hb30iQXbnluNeQv9+SjpzCJ+polOnfpg8Z99rLqAaIua+2RSOABdCUhLZ/D8KFRLaLT5DzByCejRSECCMGXA5tEjbLRWNGd+klYS5Bq2nTWS553sJsqNFa1BFTkl2ACwtlo4qOJ3GZGXI32d1aRRIaWfs3mYJ5g/Ic9VgyIiw5PO7Mmg8e+HoGSbyT6ZoPP7Nw==",
+      "key": "Ms8UZXVXP7WGji38CO9Rh9lFBm3HbtFT6bFmpTkFdhLy21VDZpENdulR8PQvm3QK+kmzynN8J3jCBsft3Xc3cFNae5/m7uZldt8RiEnXFfZCZcofrkkN5v+41L1F/2G1sy16UyiKr0riNHn1FZGBLdBYgE389arZKADw4S0/RG72c49KUwvTeEojwauHNE1ct9rYPHnv48RXl4yHlG5hawnYKdiZ2Cw1GcIWgsbPwiYmgpFGkS/HEOe/GtfvN9NIFE+T8AIerl/H+eHR5dkeDHrzRSiYF7rUrP+C7H+PYMtRaSYjzkD0vuPWmmVySkiN90tpy1oBfgA8GjwI+dEL8g==",
+      "iv": "RDOjnmWpFQRrTU6SRqIDd8RzshMR66BvNtxPYxS3DMxaCbltVceDnFWDLsuQfJZ33GIaeVqHCcV3VTJeSOV46rzuUDnlyL7F3uis1EvtbPFfqAoQS4X9nZ5QyQ/YMoM8GLV5nNYGPsjvtreEVaNC2lj/k9oGU/d14qqjFxjbpBP+e/ps6jR06W7vHcszTz8bxmzCIN1cRcA7VTiGZdKZR6TetyGVSkqY0pz1V1J7849xqQgpYAw565aJjr9iAuXPVO8t2ECQvxlQfGW2RSu9NNGZg7TPFdB5Lkhj+/n/A0ef5ya95ro+acewKzbSAUb0ElfsCMWMBlLNc1jcQK/cgw=="
+    }
+  }
+}
